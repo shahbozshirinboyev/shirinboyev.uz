@@ -318,6 +318,82 @@ function App() {
         </div>
       </div>
       {/* /Services */}
+
+      {/* Rusume */}
+        <div className="min-h-[500px] flex justify-start items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 container mx-auto lg:px-18 xl:px-32 items-start">
+            <div>
+              <h2 className="text-4xl">Why hire me?</h2>
+              <p className="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, ipsum!</p>
+
+              <div className="flex flex-col gap-2 mt-8">
+                <button className="btn w-full">Experience</button>
+                <button className="btn w-full">Education</button>
+                <button className="btn w-full">Skills</button>
+                <button className="btn w-full">About me</button>
+              </div>
+            </div>
+            <div className="lg:col-span-2">
+              <div className="px-4">
+              <h2 className="text-3xl">My experience</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique hic earum doloremque molestiae, quisquam quia deleniti! Repellat nesciunt tenetur neque?</p>
+              </div>
+
+              <div className="grid grid-cols-2 h-[300px] overflow-scroll overflow-x-hidden p-4 gap-3">
+                <div className="w-full p-4 border border-gray-300 bg-gray-100 rounded-2xl">
+                  <span>2019-202</span>
+                  <h4>Teaching Assistant</h4>
+                  <ul className="mt-8">
+                    <li>Teach Academy</li>
+                  </ul>
+                </div>
+                <div className="w-full p-4 border border-gray-300 bg-gray-100 rounded-2xl">
+                  <span>2019-202</span>
+                  <h4>Teaching Assistant</h4>
+                  <ul className="mt-8">
+                    <li>Teach Academy</li>
+                  </ul>
+                </div>
+                <div className="w-full p-4 border border-gray-300 bg-gray-100 rounded-2xl">
+                  <span>2019-202</span>
+                  <h4>Teaching Assistant</h4>
+                  <ul className="mt-8">
+                    <li>Teach Academy</li>
+                  </ul>
+                </div>
+                <div className="w-full p-4 border border-gray-300 bg-gray-100 rounded-2xl">
+                  <span>2019-202</span>
+                  <h4>Teaching Assistant</h4>
+                  <ul className="mt-8">
+                    <li>Teach Academy</li>
+                  </ul>
+                </div>
+                <div className="w-full p-4 border border-gray-300 bg-gray-100 rounded-2xl">
+                  <span>2019-202</span>
+                  <h4>Teaching Assistant</h4>
+                  <ul className="mt-8">
+                    <li>Teach Academy</li>
+                  </ul>
+                </div>
+                <div className="w-full p-4 border border-gray-300 bg-gray-100 rounded-2xl">
+                  <span>2019-202</span>
+                  <h4>Teaching Assistant</h4>
+                  <ul className="mt-8">
+                    <li>Teach Academy</li>
+                  </ul>
+                </div>
+                <div className="w-full p-4 border border-gray-300 bg-gray-100 rounded-2xl">
+                  <span>2019-202</span>
+                  <h4>Teaching Assistant</h4>
+                  <ul className="mt-8">
+                    <li>Teach Academy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {/* /Rusume */}
     </>
   );
 }
