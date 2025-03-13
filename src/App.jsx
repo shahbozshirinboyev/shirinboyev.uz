@@ -95,7 +95,7 @@ function App() {
       {/* Navbar */}
 
       {/* Home */}
-      <div className="min-h-[500px] flex flex-col justify-center items-center">
+      <div className="min-h-[500px] flex flex-col justify-center items-center p-6">
         <div className="flex flex-col-reverse lg:flex-row container mx-auto lg:px-18 xl:px-32 items-center justify-center">
           <div className="w-full">
             <span>Software developer</span>
@@ -170,26 +170,26 @@ function App() {
           </div>
         </div>
         <div className="container mx-auto lg:px-18 xl:px-32 items-center mt-12">
-          <div className="grid grid-cols-4">
-            <div className="flex justify-start items-center">
+          <div className="grid grid-cols-2 lg:grid-cols-4">
+            <div className="flex justify-start items-center p-4">
               <span className="text-5xl font-bold">12</span>
               <p>
                 Years of <br /> experience
               </p>
             </div>
-            <div className="flex justify-start items-center">
+            <div className="flex justify-start items-center p-4">
               <span className="text-5xl font-bold">26</span>
               <p>
                 Projects <br /> completed
               </p>
             </div>
-            <div className="flex justify-start items-center">
+            <div className="flex justify-start items-center p-4">
               <span className="text-5xl font-bold">8</span>
               <p>
                 Technologies <br /> mastered
               </p>
             </div>
-            <div className="flex justify-start items-center">
+            <div className="flex justify-start items-center p-4">
               <span className="text-5xl font-bold">600</span>
               <p>
                 Code <br /> commits
@@ -202,7 +202,7 @@ function App() {
 
       {/* Services */}
       <div className="min-h-[500px] flex justify-center items-center">
-        <div className="grid grid-cols-2 container mx-auto lg:px-18 xl:px-32 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 container mx-auto lg:px-18 xl:px-32 items-center">
           <div className="p-8 w-full">
             <div className="flex justify-between items-center">
               <span className="text-3xl">01</span>
