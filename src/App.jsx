@@ -95,7 +95,7 @@ function App() {
       {/* Navbar */}
 
       {/* Home */}
-      <div className="">
+      <div className="min-h-[500px] flex flex-col justify-center items-center">
         <div className="flex flex-col-reverse lg:flex-row container mx-auto lg:px-18 xl:px-32 items-center justify-center">
           <div className="w-full">
             <span>Software developer</span>
@@ -169,7 +169,7 @@ function App() {
             />
           </div>
         </div>
-        <div className="container mx-auto lg:px-18 xl:px-32 items-center">
+        <div className="container mx-auto lg:px-18 xl:px-32 items-center mt-12">
           <div className="grid grid-cols-4">
             <div className="flex justify-start items-center">
               <span className="text-5xl font-bold">12</span>
@@ -199,6 +199,125 @@ function App() {
         </div>
       </div>
       {/* /Home */}
+
+      {/* Services */}
+      <div className="min-h-[500px] flex justify-center items-center">
+        <div className="grid grid-cols-2 container mx-auto lg:px-18 xl:px-32 items-center">
+          <div className="p-8 w-full">
+            <div className="flex justify-between items-center">
+              <span className="text-3xl">01</span>
+              <button className="btn rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right rotate-45"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <h2>Web Development</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique alias deserunt ipsam.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div className="p-8 w-full">
+            <div className="flex justify-between items-center">
+              <span className="text-3xl">02</span>
+              <button className="btn rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right rotate-45"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <h2>Web Development</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique alias deserunt ipsam.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div className="p-8 w-full">
+            <div className="flex justify-between items-center">
+              <span className="text-3xl">03</span>
+              <button className="btn rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right rotate-45"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <h2>Web Development</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique alias deserunt ipsam.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div className="p-8 w-full">
+            <div className="flex justify-between items-center">
+              <span className="text-3xl">04</span>
+              <button className="btn rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right rotate-45"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <h2>Web Development</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique alias deserunt ipsam.
+              </p>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* /Services */}
     </>
   );
 }
