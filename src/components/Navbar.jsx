@@ -1,16 +1,25 @@
-import React from 'react'
+import { motion } from "motion/react";
 
 function Navbar() {
+  const transition = {
+    duration: 0.8,
+    delay: 0.5,
+    ease: [0, 0.71, 0.2, 1.01],
+  };
   return (
-    <div className='container mx-auto px-3 tablet:px-0 my-5 sticky top-2'>
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={transition}
+      className="container mx-auto px-2 tablet:px-0 my-5 sticky top-2">
 
-      <div className='flex justify-between items-center border border-red-700'>
+      <div className="flex justify-between items-center rounded-full px-3 py-1 bg-gradient-to-r from-[#fdfbfb] via-[#ebedee] to-[#dfe9f3] border border-gray-200 dark:border-gray-600 dark:bg-gradient-to-r dark:from-[#0f2027] dark:via-[#203a43] dark:to-[#2c5364]">
 
-        <div className='border'>
-          <img src="/images/logo/logo.png" className='w-10' alt="logo" />
+        <div className="">
+          <img src="/images/logo/logo.png" className="w-10" alt="logo" />
         </div>
 
-        <ul className='hidden tablet:flex border gap-4'>
+        <ul className="hidden tablet:flex gap-4 dark:text-white">
           <li>Home</li>
           <li>Services</li>
           <li>Resume</li>
@@ -19,15 +28,16 @@ function Navbar() {
           <li>Hire Me</li>
         </ul>
 
-        <div className='flex tablet:hidden border'>
-          <button>menu</button>
+        <div className="flex tablet:hidden dark:text-white">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16"> <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/> </svg>
+          </button>
         </div>
 
       </div>
 
-
-    </div>
-  )
+    </motion.nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
