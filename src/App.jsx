@@ -1,19 +1,14 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import ThemeSwitcher from './components/ThemeSwitcher'
 import Home from './components/Home'
 
 function App() {
   return (
     <>
-    <Navbar/>
-
-    <Home />
-    <div>
-      <ThemeSwitcher />
-    </div>
-    <div className='h-screen border'>App</div>
-    <div className='h-screen border'>App</div>
+      <Navbar />
+      <Home />
+      <div className='container mx-auto px-2 tablet:px-0 h-screen border'>App</div>
+      <div className='container mx-auto px-2 tablet:px-0 h-screen border'>App</div>
     </>
   )
 }

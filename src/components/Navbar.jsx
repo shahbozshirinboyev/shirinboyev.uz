@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import ThemeSwitcher from './ThemeSwitcher'
 
 function Navbar() {
   const transition = {
@@ -19,20 +20,22 @@ function Navbar() {
           <img src="/images/logo/logo.png" className="w-10" alt="logo" />
         </div>
 
-        <ul className="hidden tablet:flex gap-4 dark:text-white">
-          <li>Home</li>
-          <li>Services</li>
-          <li>Resume</li>
-          <li>Work</li>
-          <li>Contact</li>
-          <li>Hire Me</li>
-        </ul>
+        <div className="flex items-center justify-center gap-2">
 
-        <div className="flex tablet:hidden dark:text-white">
+          <ThemeSwitcher />
+
+          <ul className="hidden tablet:flex gap-4 dark:text-white">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Resume</li>
+            <li>Work</li>
+            <li>Contact</li>
+            <li>Hire Me</li>
+          </ul>
 
           <div className="dropdown dropdown-end">
-            <div tabIndex={0} role="button" className="btn btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16"> <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/> </svg>
+            <div tabIndex={0} role="button" className="btn btn-circle bg-transparent border-0 shadow-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16"> <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" /> </svg>
             </div>
             <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
               <li><a>Home</a></li>
