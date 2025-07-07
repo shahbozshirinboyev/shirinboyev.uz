@@ -1,6 +1,10 @@
 import Navbar from './components/Navbar'
-import Home from './components/Home'
+import Home from './components/Home/Home'
 import Services from './components/Services/Services'
+import Resume from './components/Resume/Resume'
+import Works from './components/Works/Works'
+import Contacts from './components/Contacts/Contacts'
+import Foother from './components/Foother'
 
 function App() {
   return (
@@ -8,8 +12,10 @@ function App() {
       <Navbar />
       <Home />
       <Services />
-      <div className='container mx-auto px-2 tablet:px-0 h-screen border'>App</div>
-      <div className='container mx-auto px-2 tablet:px-0 h-screen border'>App</div>
+      <Resume />
+      <Works />
+      <Contacts />
+      <Foother />
     </>
   )
 }

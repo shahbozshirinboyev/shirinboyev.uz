@@ -12,7 +12,7 @@ function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={transition}
-      className="container mx-auto px-2 tablet:px-0 my-5 sticky top-2">
+      className="container mx-auto px-2 tablet:px-0 my-5 sticky top-2 z-5 border border-red-500">
 
       <div className="flex justify-between items-center rounded-full px-3 py-2 border border-zinc-200 bg-white/70 backdrop-blur-sm">
 
@@ -29,7 +29,7 @@ function Navbar() {
             <li> <a href="" className="font-semibold hover:text-green-600 transition-all duration-300">Home</a></li>
             <li> <a href="" className="font-semibold hover:text-green-600 transition-all duration-300">Services</a></li>
             <li> <a href="" className="font-semibold hover:text-green-600 transition-all duration-300">Resume</a></li>
-            <li> <a href="" className="font-semibold hover:text-green-600 transition-all duration-300">Work</a></li>
+            <li> <a href="" className="font-semibold hover:text-green-600 transition-all duration-300">Works</a></li>
             <li> <a href="" className="font-semibold hover:text-green-600 transition-all duration-300">Contact</a></li>
           </ul>
 
