@@ -1,6 +1,6 @@
 @import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
-@plugin "daisyui" { themes: all; }
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+@plugin "daisyui" { themes: light; }
 @theme {
   --breakpoint-*: initial;
   --breakpoint-tablet: 40rem;
