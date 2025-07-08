@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Foother() {
   return (
     <div className='container mx-auto px-4 tablet:px-0'>
@@ -7,9 +5,9 @@ function Foother() {
         <div className="mockup-code w-full">
           <pre data-prefix="1"><code>Connecting...</code></pre>
           <pre data-prefix="2"><code>Downloading footer component...</code></pre>
-          <pre data-prefix="3" className="bg-warning text-warning-content"><code>Warning: Slow internet detected</code></pre>
-          <pre data-prefix="4" className="bg-error text-error-content"><code>Error: Foother not found on server (404)</code></pre>
-          <pre data-prefix="5" className="text-secondary-content"><code>Suggestion: Try again with better Wi-Fi</code></pre>
+          <pre data-prefix="3" className="bg-warning/30"><code>Warning: Slow internet detected</code></pre>
+          <pre data-prefix="4" className="bg-error/30"><code>Error: Foother not found on server (404)</code></pre>
+          <pre data-prefix="5" className="bg-success/30"><code>Suggestion: Try again with better Wi-Fi</code></pre>
         </div>
       </div>
     </div>
