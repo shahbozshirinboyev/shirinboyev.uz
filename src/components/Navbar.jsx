@@ -16,7 +16,7 @@ function Navbar() {
 
       <div className="flex justify-between items-center rounded-full px-3 py-2 border border-green-200 bg-green-50/70 backdrop-blur-sm">
 
-        <div className="">
+        <div>
           {/* <img src="/images/logo/logo.png" className="w-10" alt="logo" /> */}
           <h4 className="font-bold">Shahboz<span className="text-green-600">.</span></h4>
         </div>
@@ -28,11 +28,11 @@ function Navbar() {
           </div>
 
           <ul className="hidden tablet:flex gap-4">
-            <li> <a href="" className="font-semibold hover:text-green-600 transition-all duration-300">Home</a></li>
-            <li> <a href="" className="font-semibold hover:text-green-600 transition-all duration-300">Services</a></li>
-            <li> <a href="" className="font-semibold hover:text-green-600 transition-all duration-300">Resume</a></li>
-            <li> <a href="" className="font-semibold hover:text-green-600 transition-all duration-300">Works</a></li>
-            <li> <a href="" className="font-semibold hover:text-green-600 transition-all duration-300">Contact</a></li>
+            <li><a href="#home" className="font-semibold transition-all duration-300">Home</a></li>
+  <li><a href="#services" className="font-semibold transition-all duration-300">Services</a></li>
+  <li><a href="#resume" className="font-semibold transition-all duration-300">Resume</a></li>
+  <li><a href="#works" className="font-semibold transition-all duration-300">Works</a></li>
+  <li><a href="#contacts" className="font-semibold transition-all duration-300">Contact</a></li>
           </ul>
 
           <div className="dropdown dropdown-end tablet:hidden">

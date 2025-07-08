@@ -2,7 +2,7 @@ import React from "react";
 
 function Contacts() {
   return (
-    <div className="container mx-auto px-4 tablet:px-0 my-8 laptop:my-12">
+    <div id="contacts" className="container mx-auto px-4 tablet:px-0 my-8 laptop:my-12 scroll-mt-8 laptop:scroll-mt-12">
       <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6 laptop:gap-12">
         <div className="p-5 laptop:p-8 border border-zinc-200 rounded-md order-2 laptop:order-1">
           <h4 className="font-semibold text-green-500 text-3xl">

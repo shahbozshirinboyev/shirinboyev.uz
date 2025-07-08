@@ -4,7 +4,7 @@ import Statistic from './Statistic/Statistic'
 function Home() {
   return (
     <>
-      <div className='container mx-auto px-4 tablet:px-0 my-12 border border-red-500'>
+      <div id='home' className='container mx-auto px-4 tablet:px-0 my-8 laptop:my-12 scroll-mt-8 laptop:scroll-mt-12'>
         <div className='flex flex-col laptop:flex-row gap-4 '>
           <div className='w-full order-2 laptop:order-1'>
 

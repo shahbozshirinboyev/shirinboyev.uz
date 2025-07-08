@@ -2,7 +2,7 @@ import React from "react";
 
 function Resume() {
   return (
-    <div className="container mx-auto px-4 tablet:px-0 my-12 border border-red-500">
+    <div id="resume" className="container mx-auto px-4 tablet:px-0 my-8 laptop:my-12 scroll-mt-8 laptop:scroll-mt-12">
       <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-5 tablet:gap-12 laptop:gap-32">
         <div className="w-full border">
           <div>

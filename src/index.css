@@ -1,6 +1,9 @@
 @import "tailwindcss";
- @plugin "daisyui";
- @plugin "daisyui" { themes: all; }
+@plugin "daisyui";
+
+@plugin "daisyui" {
+  themes: all;
+}
 
 @theme {
   --breakpoint-*: initial;
@@ -9,6 +12,10 @@
   --breakpoint-desktop: 80rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .custom-list li::marker {
-    color: oklch(72.3% 0.219 149.579);
-  }
+  color: oklch(72.3% 0.219 149.579);
+}

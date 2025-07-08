@@ -2,7 +2,7 @@ import './Services.css'
 
 function Services() {
   return (
-    <div className='container mx-auto px-4 tablet:px-0 my-12 border border-red-500 grid grid-cols-1 laptop:grid-cols-2 gap-12'>
+    <div id='services' className='container mx-auto px-4 tablet:px-0 my-8 laptop:my-12 scroll-mt-8 laptop:scroll-mt-12 grid grid-cols-1 laptop:grid-cols-2 gap-12'>
 
       <div className='group'>
         <div className='flex justify-between items-center'>

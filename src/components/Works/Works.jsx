@@ -2,7 +2,7 @@ import React from "react"
 
 function Works() {
   return (
-    <div className="container mx-auto px-4 tablet:px-0 my-8 laptop:my-12">
+    <div id="works" className="container mx-auto px-4 tablet:px-0 my-8 laptop:my-12 scroll-mt-8 laptop:scroll-mt-12">
 
       <div className="grid grid-cols-1 laptop:grid-cols-2 gap-3 laptop:gap-12">
 
