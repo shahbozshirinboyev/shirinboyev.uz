@@ -1,9 +1,14 @@
 @import "tailwindcss";
-/* @custom-variant dark (&:where(.dark, .dark *)); */
-@plugin "daisyui" { themes: light; }
+ @plugin "daisyui";
+ @plugin "daisyui" { themes: all; }
+
 @theme {
   --breakpoint-*: initial;
   --breakpoint-tablet: 40rem;
   --breakpoint-laptop: 64rem;
   --breakpoint-desktop: 80rem;
 }
+
+.custom-list li::marker {
+    color: oklch(72.3% 0.219 149.579);
+  }
