@@ -148,12 +148,12 @@ function Contacts() {
 
             <button
               type="submit"
-              className=" mt-4 px-3 py-2 rounded-sm tablet:btn-md bg-green-50 hover:bg-green-100 border-green-200 text-green-500 flex items-center gap-2 disabled:bg-green-50 disabled:text-green-500 disabled:border-green-200 disabled:opacity-100 disabled:cursor-wait"
+              className="mt-4 btn btn-sm laptop:btn-md text-green-500 dark:text-red-500"
               disabled={loading}
             >
               {loading ? (
                 <>
-                  <span className="loading loading-spinner loading-sm text-green-500"></span>
+                  <span className="loading loading-spinner loading-sm"></span>
                   <span> {contacts.form.sending}</span>
                 </>
               ) : (
