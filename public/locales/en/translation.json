@@ -1,4 +1,8 @@
 {
+
+
+
+
   "menus": [
     {
       "id": 1,
@@ -26,15 +30,40 @@
       "name": "Contacts"
     }
   ],
+
+
+
+
   "home": [
     {
-      "logoWhite": "/images/logo/logo-white.png",
-      "logoBlack": "/images/logo/logo-black.png",
-      "title": "Welcome to WEYA",
-      "info": "Global Contents Development Company",
-      "description": "WEYA is the best content development company in Uzbekistan. We are located in Korea and Uzbekistan, and we are developing all visual contents (games, animations, movies, interiors, architecture, products, promotions) with the best effort. We aim to become a global company that leads the market based on constant challenge and beautiful sense."
+      "role": "Software Engineer",
+      "greeting": "Hello, I'm",
+      "name": "Shahboz Shirinboyev",
+      "description": "I’m a full-stack developer, building modern and functional web applications for users. My goal is to find simple and effective solutions to complex problems.",
+      "downloadCV": "Download CV",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "telegram": "Telegram"
     }
   ],
+
+
+
+
+  "statistic":[ {
+    "years": "Years of experience",
+    "repos": "Projects completed",
+    "languages": "Technologies mastered",
+    "commits": "Code commits"
+  }
+],
+
+
+
+
+
+
+
   "members": [
     {
       "img": "/images/caricature_images/1.jpg",

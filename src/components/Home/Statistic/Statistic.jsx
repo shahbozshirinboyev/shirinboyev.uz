@@ -1,9 +1,15 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import CountUp from "react-countup"; // 💡 yangi kutubxona
+import CountUp from "react-countup";
+import { useTranslation } from "react-i18next";
 import "./Statistic.css";
 
 function Statistic() {
+
+  const { t } = useTranslation();
+  const [statistic] = t("statistic", { returnObjects: true });
+
+
   const [stats, setStats] = useState({
     years: 0,
     repos: 0,
@@ -87,10 +93,11 @@ function Statistic() {
 
   return (
     <div className='container mx-auto px-2 tablet:px-0 grid grid-cols-2 gap-4 laptop:grid-cols-4 mt-10'>
-      <StatCard number={stats.years} label="Years of experience" isLoading={isLoading} />
-      <StatCard number={stats.repos} label="Projects completed" isLoading={isLoading} />
-      <StatCard number={stats.languages} label="Technologies mastered" isLoading={isLoading} />
-      <StatCard number={stats.commits} label="Code commits" isLoading={isLoading} />
+      <StatCard number={stats.years} label={statistic.years} isLoading={isLoading} />
+<StatCard number={stats.repos} label={statistic.repos} isLoading={isLoading} />
+<StatCard number={stats.languages} label={statistic.languages} isLoading={isLoading} />
+<StatCard number={stats.commits} label={statistic.commits} isLoading={isLoading} />
+
     </div>
   );
 }
@@ -105,7 +112,7 @@ function StatCard({ number, label, isLoading }) {
           <CountUp end={number} duration={2} />
         )}
       </p>
-      <p className='leading-5 font-semibold'>
+      <p className='leading-5 font-semibold opacity-90'>
         {label.split(" ").slice(0, -1).join(" ")}<br />
         {label.split(" ").slice(-1)}
       </p>

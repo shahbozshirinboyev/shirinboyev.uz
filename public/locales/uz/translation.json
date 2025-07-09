@@ -26,15 +26,52 @@
       "name": "Aloqa"
     }
   ],
+
+
+
+
+
   "home": [
     {
-      "logoWhite": "/images/logo/logo-white.png",
-      "logoBlack": "/images/logo/logo-black.png",
-      "title": "WEYA ga Xush Kelibsiz!",
-      "info": "Global Contents Development kompaniyasi",
-      "description": "WEYA - O'zbekistondagi eng yaxshi kontent ishlab chiqaruvchi kompaniya. Biz Koreya va O'zbekistonda joylashganmiz va biz barcha vizual kontentni (o'yinlar, animatsiyalar, filmlar, interyerlar, arxitektura, mahsulotlar, reklama aktsiyalari) yuqori malakali xodimlar bilan ishlab chiqmoqdamiz. Biz doimiy qiyinchilik va chiroyli tuyg'u asosida bozorni boshqaradigan global kompaniya bo'lishni maqsad qilganmiz."
+      "role": "Dasturiy ta'minot muhandisi",
+      "greeting": "Salom, men",
+      "name": "Shahboz Shirinboyev",
+      "description": "Men full-stack dasturchiman, foydalanuvchilar uchun zamonaviy va funksional veb ilovalarni yarataman. Maqsadim — murakkab muammolarga sodda va samarali yechimlar topish.",
+      "downloadCV": "CV-ni yuklab olish",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "telegram": "Telegram"
     }
   ],
+
+
+
+
+
+
+
+  "statistic":[ {
+    "years": "Yillik tajriba",
+    "repos": "Bajargan loyihalar",
+    "languages": "O‘zlashtirilgan texnologiyalar",
+    "commits": "Yozilgan kodlar"
+  }],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "arts": [
     {
       "id": 1,
