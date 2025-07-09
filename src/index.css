@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 @plugin "daisyui";
 
 @plugin "daisyui" {
@@ -14,6 +15,21 @@
 
 html {
   scroll-behavior: smooth;
+  transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+}
+
+html.dark {
+  /* color-slate-950 */
+  background-color: oklch(12.9% 0.042 264.695);
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+html:not(.dark) {
+  /* color-slate-50 */
+  background-color: oklch(98.4% 0.003 247.858);
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 .c_container {
