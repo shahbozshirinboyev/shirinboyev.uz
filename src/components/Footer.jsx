@@ -7,11 +7,11 @@ function Footer() {
   return (
     <div className='c_container'>
       <div className="mockup-code w-full">
-        <pre data-prefix="$"><code>{footer.connecting}</code></pre>
-        <pre data-prefix=">"><code>{footer.downloading}</code></pre>
-        <pre data-prefix=">" className="text-warning"><code>{footer.warning}</code></pre>
-        <pre data-prefix=">" className="text-error"><code>{footer.error}</code></pre>
-        <pre data-prefix=">" className="text-success"><code>{footer.suggestion}</code></pre>
+        <pre data-prefix="$"><code className="text-xs tablet:text-sm laptop:text-md">{footer.connecting}</code></pre>
+        <pre data-prefix=">"><code className="text-xs tablet:text-sm laptop:text-md">{footer.downloading}</code></pre>
+        <pre data-prefix=">" className="text-warning text-xs tablet:text-sm laptop:text-md"><code>{footer.warning}</code></pre>
+        <pre data-prefix=">" className="text-error text-xs tablet:text-sm laptop:text-md"><code>{footer.error}</code></pre>
+        <pre data-prefix=">" className="text-success text-xs tablet:text-sm laptop:text-md"><code>{footer.suggestion}</code></pre>
       </div>
     </div>
   )
