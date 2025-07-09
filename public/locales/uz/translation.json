@@ -360,7 +360,8 @@
         "other": "Boshqa"
       },
       "message": "Xabaringizni yozing",
-      "submit": "Xabar yuborish"
+      "submit": "Xabar yuborish",
+      "sending": "Yuborilmoqda..."
     },
     "info": {
       "phone": {

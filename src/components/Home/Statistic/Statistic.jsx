@@ -105,14 +105,14 @@ function Statistic() {
 function StatCard({ number, label, isLoading }) {
   return (
     <div className='flex items-center justify-start gap-2'>
-      <p className='text-5xl font-extrabold leading-10 number__font'>
+      <p className='text-3xl tablet:text-4xl laptop:text-5xl font-extrabold leading-10 number__font'>
         {isLoading ? (
           <CountUp end={number} duration={2} start={0} />
         ) : (
           <CountUp end={number} duration={2} />
         )}
       </p>
-      <p className='leading-5 font-semibold opacity-90'>
+      <p className='leading-5 font-semibold opacity-90 text-xs table:text-md laptop:text-lg'>
         {label.split(" ").slice(0, -1).join(" ")}<br />
         {label.split(" ").slice(-1)}
       </p>

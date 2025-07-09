@@ -243,7 +243,8 @@
         "other": "Other"
       },
       "message": "Type your message here",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "sending": "Yuborilmoqda..."
     },
     "info": {
       "phone": {

@@ -1,9 +1,75 @@
-import { section } from "motion/react-client";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import toast from "react-hot-toast";
+import { span } from "motion/react-client";
 
 function Contacts() {
   const { t } = useTranslation();
   const contacts = t("contacts", { returnObjects: true });
+  const [loading, setLoading] = useState(false);
+
+  const userLang = navigator.language || navigator.userLanguage;
+
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone: "",
+    service: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const sendMessageToTelegram = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    const botToken = "7747039478:AAElIhBlKkNvwrSOLRZ8HmNBRucLqsELAeY";
+    const chatId = "660100854";
+    const text = `Yangi kontakt so'rovi:\nLang: ${userLang}\nIsm: ${formData.first_name}\nFamiliya: ${formData.last_name}\nEmail: ${formData.email}\nTelefon: ${formData.phone}\nXizmat: ${formData.service}\n\nXabar: ${formData.message}`;
+    try {
+      const res = await fetch(
+        `https://api.telegram.org/bot${botToken}/sendMessage`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text,
+          }),
+        }
+      );
+
+      const data = await res.json();
+
+      if (data.ok) {
+        toast.success("Xabar muvaffaqiyatli yuborildi!");
+        setFormData({
+          first_name: "",
+          last_name: "",
+          email: "",
+          phone: "",
+          service: "",
+          message: "",
+        });
+      } else {
+        toast.error("Xabar yuborishda xatolik yuz berdi.");
+      }
+    } catch (err) {
+      toast.error("Server bilan bog'lanib bo'lmadi.");
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div id="contacts" className="c_container">
@@ -12,53 +78,87 @@ function Contacts() {
       </div>
       <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6 laptop:gap-12">
         <div className="p-5 laptop:p-8 border border-zinc-200 rounded-md order-2 laptop:order-1">
-          <h4 className="font-semibold text-green-500 text-3xl">{contacts.form.title}</h4>
+          <h4 className="font-semibold text-green-500 text-3xl">
+            {contacts.form.title}
+          </h4>
           <p className="my-3">{contacts.form.description}</p>
 
-          <form action="">
+          <form onSubmit={sendMessageToTelegram}>
             <div className="grid grid-cols-2 gap-4">
               <input
                 type="text"
+                name="first_name"
+                value={formData.first_name}
+                onChange={handleChange}
                 placeholder={contacts.form.first_name}
                 className="input input-sm tablet:input-md"
+                required
               />
               <input
                 type="text"
+                name="last_name"
+                value={formData.last_name}
+                onChange={handleChange}
                 placeholder={contacts.form.last_name}
                 className="input input-sm tablet:input-md"
+                required
               />
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder={contacts.form.email}
                 className="input input-sm tablet:input-md"
+                required
               />
               <input
                 type="number"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 placeholder={contacts.form.phone}
                 className="input input-sm tablet:input-md"
               />
             </div>
 
-            <div>
-              <select
-                defaultValue="Select a service"
-                className="select select-sm tablet:select-md w-full my-4 text-zinc-400"
-              >
-                <option disabled={true} className="opacity-50">
-                  {contacts.form.service}
-                </option>
-                <option>{contacts.form.services.createWebsite}</option>
-                <option>{contacts.form.services.createApi}</option>
-                <option>{contacts.form.services.other}</option>
-              </select>
-              <textarea
-                className="textarea w-full"
-                placeholder={contacts.form.message}
-              ></textarea>
-            </div>
+            <select
+              name="service"
+              value={formData.service}
+              onChange={handleChange}
+              className="select select-sm tablet:select-md w-full my-4 text-zinc-400"
+              required
+            >
+              <option value="" disabled>
+                {contacts.form.service}
+              </option>
+              <option>{contacts.form.services.createWebsite}</option>
+              <option>{contacts.form.services.createApi}</option>
+              <option>{contacts.form.services.other}</option>
+            </select>
 
-            <button className="btn mt-4 btn-sm tablet:btn-md bg-green-50 hover:bg-green-100 border-green-200 text-green-500">
-              {contacts.form.submit}
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              className="textarea w-full"
+              placeholder={contacts.form.message}
+              required
+            ></textarea>
+
+            <button
+              type="submit"
+              className=" mt-4 px-3 py-2 rounded-sm tablet:btn-md bg-green-50 hover:bg-green-100 border-green-200 text-green-500 flex items-center gap-2 disabled:bg-green-50 disabled:text-green-500 disabled:border-green-200 disabled:opacity-100 disabled:cursor-wait"
+              disabled={loading}
+            >
+              {loading ? (
+                <>
+                  <span className="loading loading-spinner loading-sm text-green-500"></span>
+                  <span> {contacts.form.sending}</span>
+                </>
+              ) : (
+                <span>{contacts.form.submit}</span>
+              )}
             </button>
           </form>
         </div>
@@ -81,8 +181,12 @@ function Contacts() {
               </svg>
             </div>
             <div>
-              <span className="text-sm font-semibold opacity-70">{contacts.info.phone.name}</span>
-              <p className="font-semibold leading-4">{contacts.info.phone.value}</p>
+              <span className="text-sm font-semibold opacity-70">
+                {contacts.info.phone.name}
+              </span>
+              <p className="font-semibold leading-4">
+                {contacts.info.phone.value}
+              </p>
             </div>
           </div>
 
@@ -100,8 +204,12 @@ function Contacts() {
               </svg>
             </div>
             <div>
-              <span className="text-sm font-semibold opacity-70">{contacts.info.telegram.name}</span>
-              <p className="font-semibold leading-4">{contacts.info.telegram.value}</p>
+              <span className="text-sm font-semibold opacity-70">
+                {contacts.info.telegram.name}
+              </span>
+              <p className="font-semibold leading-4">
+                {contacts.info.telegram.value}
+              </p>
             </div>
           </div>
 
@@ -119,8 +227,12 @@ function Contacts() {
               </svg>
             </div>
             <div>
-              <span className="text-sm font-semibold opacity-70">{contacts.info.email.name}</span>
-              <p className="font-semibold leading-4">{contacts.info.email.value}</p>
+              <span className="text-sm font-semibold opacity-70">
+                {contacts.info.email.name}
+              </span>
+              <p className="font-semibold leading-4">
+                {contacts.info.email.value}
+              </p>
             </div>
           </div>
 
@@ -138,7 +250,9 @@ function Contacts() {
               </svg>
             </div>
             <div>
-              <span className="text-sm font-semibold opacity-70">{contacts.info.address.name}</span>
+              <span className="text-sm font-semibold opacity-70">
+                {contacts.info.address.name}
+              </span>
               <p className="font-semibold leading-4">
                 {contacts.info.address.value}
               </p>
