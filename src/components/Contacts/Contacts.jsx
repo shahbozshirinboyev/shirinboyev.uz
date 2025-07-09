@@ -1,42 +1,40 @@
-import React from "react";
+import { section } from "motion/react-client";
+import { useTranslation } from "react-i18next";
 
 function Contacts() {
+  const { t } = useTranslation();
+  const contacts = t("contacts", { returnObjects: true });
+
   return (
     <div id="contacts" className="c_container">
       <div className="border border-green-200 bg-green-50/70 backdrop-blur-sm p-2 mb-4 rounded-sm">
-        <h2 className="font-bold text-green-500">Contacts</h2>
+        <h2 className="font-bold text-green-500">{contacts.section}</h2>
       </div>
       <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6 laptop:gap-12">
         <div className="p-5 laptop:p-8 border border-zinc-200 rounded-md order-2 laptop:order-1">
-          <h4 className="font-semibold text-green-500 text-3xl">
-            Let's work together
-          </h4>
-          <p className="my-3">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum nisi
-            nobis fuga iure debitis officia aliquid incidunt expedita velit
-            voluptates!
-          </p>
+          <h4 className="font-semibold text-green-500 text-3xl">{contacts.form.title}</h4>
+          <p className="my-3">{contacts.form.description}</p>
 
           <form action="">
             <div className="grid grid-cols-2 gap-4">
               <input
                 type="text"
-                placeholder="First name"
+                placeholder={contacts.form.first_name}
                 className="input input-sm tablet:input-md"
               />
               <input
                 type="text"
-                placeholder="Last name"
+                placeholder={contacts.form.last_name}
                 className="input input-sm tablet:input-md"
               />
               <input
                 type="email"
-                placeholder="Email address"
+                placeholder={contacts.form.email}
                 className="input input-sm tablet:input-md"
               />
               <input
                 type="number"
-                placeholder="Phone number"
+                placeholder={contacts.form.phone}
                 className="input input-sm tablet:input-md"
               />
             </div>
@@ -44,23 +42,23 @@ function Contacts() {
             <div>
               <select
                 defaultValue="Select a service"
-                className="select select-sm tablet:select-md w-full my-4"
+                className="select select-sm tablet:select-md w-full my-4 text-zinc-400"
               >
                 <option disabled={true} className="opacity-50">
-                  Select a service
+                  {contacts.form.service}
                 </option>
-                <option>Create website</option>
-                <option>Create API</option>
-                <option>Other</option>
+                <option>{contacts.form.services.createWebsite}</option>
+                <option>{contacts.form.services.createApi}</option>
+                <option>{contacts.form.services.other}</option>
               </select>
               <textarea
                 className="textarea w-full"
-                placeholder="Type your message here."
+                placeholder={contacts.form.message}
               ></textarea>
             </div>
 
             <button className="btn mt-4 btn-sm tablet:btn-md bg-green-50 hover:bg-green-100 border-green-200 text-green-500">
-              Send Message
+              {contacts.form.submit}
             </button>
           </form>
         </div>
@@ -83,8 +81,8 @@ function Contacts() {
               </svg>
             </div>
             <div>
-              <span className="text-sm font-semibold opacity-70">Phone</span>
-              <p className="font-semibold leading-4">+998 (93) 009 11 66</p>
+              <span className="text-sm font-semibold opacity-70">{contacts.info.phone.name}</span>
+              <p className="font-semibold leading-4">{contacts.info.phone.value}</p>
             </div>
           </div>
 
@@ -102,8 +100,8 @@ function Contacts() {
               </svg>
             </div>
             <div>
-              <span className="text-sm font-semibold opacity-70">Telegram</span>
-              <p className="font-semibold leading-4">t.em/sh_shirinboyev</p>
+              <span className="text-sm font-semibold opacity-70">{contacts.info.telegram.name}</span>
+              <p className="font-semibold leading-4">{contacts.info.telegram.value}</p>
             </div>
           </div>
 
@@ -121,8 +119,8 @@ function Contacts() {
               </svg>
             </div>
             <div>
-              <span className="text-sm font-semibold opacity-70">Email</span>
-              <p className="font-semibold leading-4">shahboz.sh.b@gmail.com</p>
+              <span className="text-sm font-semibold opacity-70">{contacts.info.email.name}</span>
+              <p className="font-semibold leading-4">{contacts.info.email.value}</p>
             </div>
           </div>
 
@@ -140,9 +138,9 @@ function Contacts() {
               </svg>
             </div>
             <div>
-              <span className="text-sm font-semibold opacity-70">Address</span>
+              <span className="text-sm font-semibold opacity-70">{contacts.info.address.name}</span>
               <p className="font-semibold leading-4">
-                Toshkent sh, Bektemir tum, Musaffo mas.
+                {contacts.info.address.value}
               </p>
             </div>
           </div>

@@ -4,7 +4,7 @@ import Services from './components/Services/Services'
 import Resume from './components/Resume/Resume'
 import Works from './components/Works/Works'
 import Contacts from './components/Contacts/Contacts'
-import Foother from './components/Foother'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Resume />
       <Works />
       <Contacts />
-      <Foother />
+      <Footer />
     </>
   )
 }

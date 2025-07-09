@@ -197,5 +197,49 @@
         "image": "https://cdn.dribbble.com/userupload/32202836/file/original-ed57e24965cae881f7bc51b0eb5f842b.jpg?resize=1200x900&vertical=center"
       }
     ]
+  },
+  "contacts": {
+    "section": "Контакты",
+    "form": {
+      "title": "Давайте работать вместе",
+      "description": "Пожалуйста, заполните форму ниже. Я свяжусь с вами в ближайшее время.",
+      "first_name": "Имя",
+      "last_name": "Фамилия",
+      "email": "Электронная почта",
+      "phone": "Номер телефона",
+      "service": "Выберите услугу",
+      "services": {
+        "createWebsite": "Создать сайт",
+        "createApi": "Создать API",
+        "other": "Другое"
+      },
+      "message": "Напишите ваше сообщение здесь",
+      "submit": "Отправить сообщение"
+    },
+    "info": {
+      "phone": {
+        "name": "Телефон",
+        "value": "+998 (93) 009 11 66"
+      },
+      "telegram": {
+        "name": "Телеграм",
+        "value": "t.me/sh_shirinboyev"
+      },
+      "email": {
+        "name": "Электронная почта",
+        "value": "shahboz.sh.b@gmail.com"
+      },
+      "address": {
+        "name": "Адрес",
+        "value": "город Ташкент, Бектемирский район, массив Мусаффо"
+      }
+    }
+  },
+  "footer": {
+    "connecting": "подключение...",
+    "downloading": "загрузка компонента подвала...",
+    "warning": "предупреждение: обнаружен медленный интернет",
+    "error": "ошибка: компонент подвала не найден на сервере (404)",
+    "suggestion": "рекомендация: попробуйте снова с лучшим Wi-Fi"
   }
 }

@@ -314,5 +314,49 @@
         "image": "https://cdn.dribbble.com/userupload/32202836/file/original-ed57e24965cae881f7bc51b0eb5f842b.jpg?resize=1200x900&vertical=center"
       }
     ]
+  },
+  "contacts": {
+    "section": "Kontaktlar",
+    "form": {
+      "title": "Keling, birga ishlaylik",
+      "description": "Iltimos, quyidagi formani to‘ldiring. Tez orada siz bilan bog‘lanaman.",
+      "first_name": "Ismingiz",
+      "last_name": "Familiyangiz",
+      "email": "Email manzilingiz",
+      "phone": "Telefon raqamingiz",
+      "service": "Xizmat turini tanlang",
+      "services": {
+        "createWebsite": "Sayt yaratish",
+        "createApi": "API yaratish",
+        "other": "Boshqa"
+      },
+      "message": "Xabaringizni yozing",
+      "submit": "Xabar yuborish"
+    },
+    "info": {
+      "phone": {
+        "name": "Telefon",
+        "value": "+998 (93) 009 11 66"
+      },
+      "telegram": {
+        "name": "Telegram",
+        "value": "Telefon"
+      },
+      "email": {
+        "name": "Email",
+        "value": "shahboz.sh.b@gmail.com"
+      },
+      "address": {
+        "name": "Manzil",
+        "value": "Tashkent city, Bektemir district, Musaffo area"
+      }
+    }
+  },
+  "footer": {
+    "connecting": "ulanilmoqda...",
+    "downloading": "footer komponent yuklanmoqda...",
+    "warning": "ogohlantirish: sekin internet aniqlandi",
+    "error": "xatolik: footer serverda topilmadi (404)",
+    "suggestion": "taklif: yaxshi Wi-Fi orqali qayta urinib ko‘ring"
   }
 }

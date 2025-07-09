@@ -63,7 +63,7 @@ const projects = works.items
         <AnimatePresence mode="wait">
           <motion.div
             key={project.id + "-image"}
-            className="flex justify-center items-center order-1 laptop:order-2"
+            className="flex border justify-center items-center order-1 laptop:order-2"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
@@ -72,7 +72,7 @@ const projects = works.items
             <img
               src={project.image}
               alt="project visual"
-              className="max-h-96 object-cover"
+              className="max-h-100 object-cover border "
             />
           </motion.div>
         </AnimatePresence>
