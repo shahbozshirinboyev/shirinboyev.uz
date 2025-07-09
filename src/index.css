@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.c_container {
+  @apply container mx-auto px-4 tablet:px-0 mt-12 tablet:mt-16 laptop:mt-20 scroll-mt-14;
+}
+
 .custom-list li::marker {
   color: oklch(72.3% 0.219 149.579);
 }
