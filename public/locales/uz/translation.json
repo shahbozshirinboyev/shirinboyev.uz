@@ -46,6 +46,35 @@
       "commits": "Yozilgan kodlar"
     }
   ],
+  "services": {
+    "section": "Xizmatlar",
+    "items": [
+      {
+        "number": "01",
+        "title": "Veb Dasturlash",
+        "description": "Murakkab va zamonaviy veb-ilovalarni yaratish.",
+        "link": ""
+      },
+      {
+        "number": "02",
+        "title": "UI/UX Dizayn",
+        "description": "Foydalanuvchi uchun qulay va estetik interfeys dizayni.",
+        "link": ""
+      },
+      {
+        "number": "03",
+        "title": "Logo Dizayn",
+        "description": "Brendingiz uchun kreativ va yodda qoladigan logo dizayni.",
+        "link": ""
+      },
+      {
+        "number": "04",
+        "title": "SEO",
+        "description": "Qidiruv tizimlarida yuqori natijaga erishish uchun optimallashtirish.",
+        "link": ""
+      }
+    ]
+  },
   "resume": {
     "info": {
       "section": "Rezyume",

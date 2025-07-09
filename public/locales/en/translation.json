@@ -46,6 +46,35 @@
       "commits": "Code commits"
     }
   ],
+  "services": {
+    "section": "Services",
+    "items": [
+      {
+        "number": "01",
+        "title": "Web Development",
+        "description": "Building complex and modern web applications.",
+        "link": ""
+      },
+      {
+        "number": "02",
+        "title": "UI/UX Design",
+        "description": "Creating user-friendly and aesthetic interface design.",
+        "link": ""
+      },
+      {
+        "number": "03",
+        "title": "Logo Design",
+        "description": "Creative and memorable logo design for your brand.",
+        "link": ""
+      },
+      {
+        "number": "04",
+        "title": "SEO",
+        "description": "Optimizing your website to rank higher in search engines.",
+        "link": ""
+      }
+    ]
+  },
   "resume": {
     "info": {
       "section": "Resume",
