@@ -24,7 +24,7 @@ const projects = works.items
       id="works"
       className="c_container"
     >
-      <div className="border border-green-200 bg-green-50/70 backdrop-blur-sm p-2 mb-4 rounded-sm">
+      <div className="border border-green-200 dark:border-green-200/10 bg-green-50/70 dark:bg-green-50/10 backdrop-blur-sm p-2 mb-4 rounded-sm">
         <h2 className="font-bold text-green-500">{works.section}</h2>
       </div>
 
@@ -50,7 +50,7 @@ const projects = works.items
               ))}
             </ul>
 
-            <hr className="my-3" />
+            <hr className="my-2 dark:text-green-500/40 text-gray-300" />
             <div className="flex gap-2 justify-start">
               <a href={project.link_web} target="_blank" className="btn btn-circle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-down-left rotate-180" viewBox="0 0 16 16" > <path fillRule="evenodd" d="M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0z" /> </svg>
@@ -81,13 +81,13 @@ const projects = works.items
       <div className="flex items-center justify-end gap-4 mt-4">
         <button
           onClick={handlePrev}
-          className="btn btn-sm laptop:btn-md bg-green-50 hover:bg-green-100 border-green-200 text-green-500"
+          className="btn btn-sm laptop:btn-md bg-green-50 hover:bg-green-100 dark:hover:bg-green-100/20 dark:bg-green-50/10 border-green-200 dark:border-green-200/10 text-green-500"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-left" viewBox="0 0 16 16" > <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" /> </svg>
         </button>
         <button
           onClick={handleNext}
-          className="btn btn-sm laptop:btn-md bg-green-50 hover:bg-green-100 border-green-200 text-green-500"
+          className="btn btn-sm laptop:btn-md bg-green-50 hover:bg-green-100 dark:hover:bg-green-100/20 dark:bg-green-50/10 border-green-200 dark:border-green-200/10 text-green-500"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-right" viewBox="0 0 16 16" > <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" /> </svg>
         </button>

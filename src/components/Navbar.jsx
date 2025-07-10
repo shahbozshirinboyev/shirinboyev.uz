@@ -23,7 +23,8 @@ function Navbar() {
       transition={transition}
       className="container mx-auto px-4 tablet:px-0 my-4 sticky top-1 z-5"
     >
-      <div className="flex justify-between items-center rounded-full px-3 py-2 border border-green-200 bg-green-50/70 backdrop-blur-sm">
+      <div className="flex justify-between items-center rounded-full px-3 py-2 border border-green-200 dark:border-green-200/10 bg-green-50/70 dark:bg-green-50/10 backdrop-blur-sm">
+      {/* border border-green-200 dark:border-green-200/10 bg-green-50/70 dark:bg-green-50/10 backdrop-blur-sm p-2 mb-4 rounded-sm */}
 
         <div>
           {/* <img src="/images/logo/logo.png" className="w-10" alt="logo" /> */}

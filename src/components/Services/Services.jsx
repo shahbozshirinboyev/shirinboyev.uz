@@ -6,7 +6,7 @@ function Services() {
   const services = t("services", { returnObjects: true });
   return (
     <div id="services" className="c_container">
-      <div className="border border-green-200 bg-green-50/70 backdrop-blur-sm p-2 mb-4 rounded-sm">
+      <div className="border border-green-200 dark:border-green-200/10 bg-green-50/70 dark:bg-green-50/10 backdrop-blur-sm p-2 mb-4 rounded-sm">
         <h2 className="font-bold text-green-500">{services.section}</h2>
       </div>
       <div className="grid grid-cols-1 laptop:grid-cols-2 gap-12">
