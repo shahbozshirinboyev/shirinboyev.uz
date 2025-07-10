@@ -78,8 +78,8 @@
   "resume": {
     "info": {
       "section": "Resume",
-      "title": "Why me?",
-      "description": "I am a developer who strives to solve complex problems with simple and effective solutions.",
+      "title": "Why choose me?",
+      "description": "I always strive to deeply understand client needs and deliver simple yet effective solutions by leveraging modern technologies.",
       "tabs": {
         "skills": "Skills",
         "experience": "Experience",
@@ -89,14 +89,14 @@
     },
     "about": {
       "title": "About Me",
-      "description": "A responsible, self-developing and knowledge-hungry developer. A responsible, self-developing and knowledge-hungry developer. A responsible, self-developing and knowledge-hungry developer.",
+      "description": "I am a responsible, self-motivated developer with a strong thirst for knowledge. I prioritize continuous learning, skill improvement, and knowledge sharing. I enjoy working with modern technologies and approach every project with seriousness, structure, and creativity.",
       "full_name": {
         "name": "Full Name",
         "value": "Shahboz Shirinboyev"
       },
       "experience": {
         "name": "Experience",
-        "value": "1 year"
+        "value": "3+ years"
       },
       "nationality": {
         "name": "Nationality",
@@ -112,25 +112,35 @@
       },
       "telegram": {
         "name": "Telegram",
-        "value": "@shahboz_dev"
+        "value": "@sh_shirinboyev"
       },
       "email": {
         "name": "Email",
-        "value": "shahboz@example.com"
+        "value": "shahboz.sh.b@gmail.com"
       },
       "languages": {
         "name": "Languages",
-        "value": "Uzbek, English"
+        "value": "Uzbek(Native), English(B2), Russian(B1)"
       }
     },
     "education": {
       "title": "Education",
-      "description": "Below are my educational backgrounds:",
+      "description": "Below are the educational institutions I attended and the fields I studied.",
       "items": [
         {
           "years": "2019 - 2023",
           "institution": "Tashkent University of Information Technologies",
           "field": "Computer Engineering"
+        },
+        {
+          "years": "2015 - 2018",
+          "institution": "Vocational College, Khatirchi District, Navoi Region",
+          "field": "Water Management and Land Reclamation"
+        },
+        {
+          "years": "2007 - 2015",
+          "institution": "School No. 54, Khatirchi District, Navoi Region",
+          "field": "General Education"
         }
       ]
     },

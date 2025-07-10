@@ -20,7 +20,7 @@ function Resume() {
         <div>
           <div>
             <h2 className="text-3xl font-semibold mb-3">{resume.info.title}</h2>
-            <p className="text-sm">
+            <p className="text-sm font-normal opacity-80">
               {resume.info.description}
             </p>
           </div>
@@ -82,51 +82,51 @@ function Resume() {
                 <div>
                   <div>
                     <h3 className="text-2xl font-semibold mb-3">{resume.about.title}</h3>
-                    <p className="text-sm">
-                     {resume.about.description}
+                    <p className="text-sm font-normal opacity-80">
+                      {resume.about.description}
                     </p>
                   </div>
                   <div className="grid grid-cols-1 laptop:grid-cols-2 mt-5 gap-4 max-h-[350px]">
                     <ul className="flex flex-col gap-3">
 
                       <li className="flex gap-3 font-semibold">
-                        <span className="opacity-50">{resume.about.full_name.name}</span>
-                        <span>{resume.about.full_name.value}</span>
+                        <span className="opacity-70 text-sm laptop:text-md">{resume.about.full_name.name}</span>
+                        <span className="text-sm">{resume.about.full_name.value}</span>
                       </li>
 
                       <li className="flex gap-3 font-semibold">
-                        <span className="opacity-50">{resume.about.experience.name}</span>
-                        <span>{resume.about.experience.value}</span>
+                        <span className="opacity-70 text-sm laptop:text-md">{resume.about.experience.name}</span>
+                        <span className="text-sm">{resume.about.experience.value}</span>
                       </li>
 
                       <li className="flex gap-3 font-semibold">
-                        <span className="opacity-50">{resume.about.nationality.name}</span>
-                        <span>{resume.about.nationality.value}</span>
+                        <span className="opacity-70 text-sm laptop:text-md">{resume.about.nationality.name}</span>
+                        <span className="text-sm">{resume.about.nationality.value}</span>
                       </li>
 
                       <li className="flex gap-3 font-semibold">
-                        <span className="opacity-50">{resume.about.freelance.name}</span>
-                        <span>{resume.about.freelance.value}</span>
+                        <span className="opacity-70 text-sm laptop:text-md">{resume.about.freelance.name}</span>
+                        <span className="text-sm">{resume.about.freelance.value}</span>
                       </li>
 
                     </ul>
 
                     <ul className="flex flex-col gap-3">
                       <li className="flex gap-3 font-semibold">
-                        <span className="opacity-50">{resume.about.phone.name}</span>
-                        <span>{resume.about.phone.value}</span>
+                        <span className="opacity-70 text-sm laptop:text-md">{resume.about.phone.name}</span>
+                        <span className="text-sm">{resume.about.phone.value}</span>
                       </li>
                       <li className="flex gap-3 font-semibold">
-                        <span className="opacity-50">{resume.about.email.name}</span>
-                        <span>{resume.about.email.value}</span>
+                        <span className="opacity-70 text-sm laptop:text-md">{resume.about.email.name}</span>
+                        <span className="text-sm">{resume.about.email.value}</span>
                       </li>
                       <li className="flex gap-3 font-semibold">
-                        <span className="opacity-50">{resume.about.telegram.name}</span>
-                        <span>{resume.about.telegram.value}</span>
+                        <span className="opacity-70 text-sm laptop:text-md">{resume.about.telegram.name}</span>
+                        <span className="text-sm">{resume.about.telegram.value}</span>
                       </li>
                       <li className="flex gap-3 font-semibold">
-                        <span className="opacity-50">{resume.about.languages.name}</span>
-                        <span>{resume.about.languages.value}</span>
+                        <span className="opacity-70 text-sm laptop:text-md">{resume.about.languages.name}</span>
+                        <span className="text-sm">{resume.about.languages.value}</span>
                       </li>
                     </ul>
                   </div>
@@ -147,7 +147,7 @@ function Resume() {
 
                   <div>
                     <h3 className="text-2xl font-semibold mb-3">{resume.education.title}</h3>
-                    <p className="text-sm">
+                    <p className="text-sm font-normal opacity-80">
                       {resume.education.description}
                     </p>
                   </div>
@@ -157,16 +157,16 @@ function Resume() {
                     {
                       resume.education.items.map((education, index) => (
 
-                        <div className="border border-zinc-400 p-4 rounded-sm">
-                          <span className="text-green-500 font-bold">
+                        <div className="border border-green-200 bg-green-50/20 dark:border-green-200/10 dark:bg-green-50/10 p-4 rounded-sm">
+                          <span className="text-green-500 font-bold text-md">
                             {education.years}
                           </span>
-                          <h4 className="pt-3 font-bold">
+                          <h4 className="pt-1 font-semibold">
                             {education.institution}
                           </h4>
 
-                          <ul className="mt-5 list-disc list-inside custom-list">
-                            <li className="font-semibold">{education.field}</li>
+                          <ul className="mt-5 list-disc list-inside custom-list opacity-80">
+                            <li className="font-semibold text-sm">{education.field}</li>
                           </ul>
                         </div>
 
@@ -190,7 +190,7 @@ function Resume() {
 
                   <div>
                     <h3 className="text-2xl font-semibold mb-3">{resume.experience.title}</h3>
-                    <p className="text-sm">
+                    <p className="text-sm font-normal opacity-80">
                       {resume.experience.description}
                     </p>
                   </div>
@@ -200,16 +200,16 @@ function Resume() {
                     {
                       resume.experience.items.map((experience, index) => (
 
-                        <div className="border border-zinc-400 p-4 rounded-sm">
+                        <div className="border border-green-200 bg-green-50/20 dark:border-green-200/10 dark:bg-green-50/10 p-4 rounded-sm">
                           <span className="text-green-500 font-bold">
                             {experience.years}
                           </span>
-                          <h4 className="pt-3 font-bold">
+                          <h4 className="pt-3 font-semibold">
                             {experience.company}
                           </h4>
 
-                          <ul className="mt-5 list-disc list-inside custom-list">
-                            <li className="font-semibold">{experience.role}</li>
+                          <ul className="mt-5 list-disc list-inside custom-list opacity-80">
+                            <li className="font-semibold text-sm">{experience.role}</li>
                           </ul>
                         </div>
 
@@ -232,7 +232,7 @@ function Resume() {
                 <div>
                   <div>
                     <h3 className="text-2xl font-semibold mb-3">{resume.skills.title}</h3>
-                    <p className="text-sm">
+                    <p className="text-sm font-normal opacity-80">
                       {resume.skills.description}
                     </p>
                   </div>
@@ -240,7 +240,7 @@ function Resume() {
 
                     {
                       resume.skills.list.map((skill, index) => (
-                        <div key={index} className="border rounded-sm border-zinc-400 p-2 flex justify-start items-center gap-2">
+                        <div key={index} className="border border-green-200 bg-green-50/20 dark:border-green-200/10 dark:bg-green-50/10 rounded-sm p-2 laptop:p-3 flex justify-start items-center gap-2">
                           <img src={skill.icon} alt={skill.name} width="35px" height='35px' />
                           <span className="font-medium">{skill.name}</span>
                         </div>

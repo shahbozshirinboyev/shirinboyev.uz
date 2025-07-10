@@ -79,7 +79,7 @@
     "info": {
       "section": "Rezyume",
       "title": "Nega aynan men?",
-      "description": "Men murakkab muammolarni sodda va samarali yechimlar bilan hal qilishga intiladigan dasturchiman.",
+      "description": "Doim zamonaviy texnologiyalardan foydalangan holda, mijozlar ehtiyojini chuqur tushunishga va ularning muammolariga oddiy hamda samarali yechimlar topishga intilaman.",
       "tabs": {
         "skills": "Ko‘nikmalar",
         "experience": "Tajriba",
@@ -89,21 +89,21 @@
     },
     "about": {
       "title": "Men haqimda",
-      "description": "Mas'uliyatli, o‘zini o‘zi rivojlantira oladigan va yangi bilimlarga chanqoq dasturchiman. Mas'uliyatli, o‘zini o‘zi rivojlantira oladigan va yangi bilimlarga chanqoq dasturchiman. Mas'uliyatli, o‘zini o‘zi rivojlantira oladigan va yangi bilimlarga chanqoq dasturchiman.",
+      "description": "Mas'uliyatli, o‘zini o‘zi rivojlantira oladigan va yangi bilimlarga chanqoq dasturchiman. Doimiy o‘rganish, tajriba almashish va o‘z ustimda ishlashga katta e’tibor beraman. Zamonaviy texnologiyalar bilan ishlashni yaxshi ko‘raman va har bir loyihaga jiddiy, tizimli va ijodiy yondashaman.",
       "full_name": {
         "name": "To‘liq ism",
         "value": "Shahboz Shirinboyev"
       },
       "experience": {
         "name": "Tajriba",
-        "value": "1 yil"
+        "value": "3+ yil"
       },
       "nationality": {
         "name": "Millati",
         "value": "O‘zbek"
       },
       "freelance": {
-        "name": "Frilans",
+        "name": "Mustaqil ish faoliyati",
         "value": "Mavjud"
       },
       "phone": {
@@ -112,81 +112,56 @@
       },
       "telegram": {
         "name": "Telegram",
-        "value": "@shahboz_dev"
+        "value": "@sh_shirinboyev"
       },
       "email": {
         "name": "Elektron pochta",
-        "value": "shahboz@example.com"
+        "value": "shahboz.sh.b@gmail.com"
       },
       "languages": {
         "name": "Tillar",
-        "value": "O‘zbek, Ingliz"
+        "value": "O‘zbek(ona tili), Ingliz tili(B2), Rus tili(B1)"
       }
     },
     "education": {
       "title": "Ta'lim",
-      "description": "Quyida mening ta'lim yo‘nalishlarim keltirilgan:",
+      "description": "Quyida men olgan ta'lim yo‘nalishlari va o‘qigan muassasalarim ko‘rsatilgan.",
       "items": [
         {
           "years": "2019 - 2023",
           "institution": "Toshkent Axborot Texnologiyalari Universiteti",
-          "field": "Kompyuter muhandisligi"
+          "field": "Kompyuter injiniringi"
         },
         {
-          "years": "2019 - 2023",
-          "institution": "Toshkent Axborot Texnologiyalari Universiteti",
-          "field": "Kompyuter muhandisligi"
+          "years": "2015 - 2018",
+          "institution": "Navoiy viloyati Xatirchi tumani Kasb-Hunar Kolleji",
+          "field": "Suv xo‘jaligi va melioratsiya"
         },
         {
-          "years": "2019 - 2023",
-          "institution": "Toshkent Axborot Texnologiyalari Universiteti",
-          "field": "Kompyuter muhandisligi"
-        },
-        {
-          "years": "2019 - 2023",
-          "institution": "Toshkent Axborot Texnologiyalari Universiteti",
-          "field": "Kompyuter muhandisligi"
-        },
-        {
-          "years": "2019 - 2023",
-          "institution": "Toshkent Axborot Texnologiyalari Universiteti",
-          "field": "Kompyuter muhandisligi"
-        },
-        {
-          "years": "2019 - 2023",
-          "institution": "Toshkent Axborot Texnologiyalari Universiteti",
-          "field": "Kompyuter muhandisligi"
+          "years": "2007 - 2015",
+          "institution": "Navoiy viloyati Xatirchi tumani 54-Maktab",
+          "field": "Umumiy ta'lim"
         }
       ]
     },
     "experience": {
       "title": "Tajriba",
-      "description": "Quyidagi tashkilotlarda amaliy tajriba orttirdim:",
+      "description": "Quyidagi tashkilotlar orqali amaliy ko‘nikmalar orttirdim va real loyihalar ustida ishlash tajribasiga ega bo‘lganman.",
       "items": [
         {
-          "years": "2023 - Hozirgacha",
-          "company": "Sample Company",
-          "role": "Frontend dasturchi"
+          "years": "2024, Iyun - Hozirgacha",
+          "company": "\"WEYA\" MCHJ",
+          "role": "Dasturiy ta'minot muhandisi"
         },
         {
-          "years": "2023 - Hozirgacha",
-          "company": "Sample Company",
-          "role": "Frontend dasturchi"
+          "years": "2023, Dekabr - 2024, May",
+          "company": "\"Akmalovich Elektroniks\" MCHJ",
+          "role": "Kompyuter tizimlari muhandisi"
         },
         {
-          "years": "2023 - Hozirgacha",
-          "company": "Sample Company",
-          "role": "Frontend dasturchi"
-        },
-        {
-          "years": "2023 - Hozirgacha",
-          "company": "Sample Company",
-          "role": "Frontend dasturchi"
-        },
-        {
-          "years": "2023 - Hozirgacha",
-          "company": "Sample Company",
-          "role": "Frontend dasturchi"
+          "years": "2022, Sentyabr - 2023, Noyabr",
+          "company": "\"ProBrend\" MCHJ",
+          "role": "Veb-dizayner"
         }
       ]
     },
