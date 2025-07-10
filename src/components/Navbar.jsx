@@ -23,8 +23,7 @@ function Navbar() {
       transition={transition}
       className="container mx-auto px-4 tablet:px-0 my-4 sticky top-1 z-5"
     >
-      <div className="flex justify-between items-center rounded-full px-3 py-2 border border-green-200 dark:border-green-200/10 bg-green-50/70 dark:bg-green-50/10 backdrop-blur-sm">
-      {/* border border-green-200 dark:border-green-200/10 bg-green-50/70 dark:bg-green-50/10 backdrop-blur-sm p-2 mb-4 rounded-sm */}
+      <div className="flex justify-between items-center rounded-full px-3 py-2 border border-green-200 dark:border-green-200/10 bg-green-50/70 dark:bg-green-50/10 backdrop-blur-3xl">
 
         <div>
           {/* <img src="/images/logo/logo.png" className="w-10" alt="logo" /> */}
@@ -48,9 +47,7 @@ function Navbar() {
               <li key={menu.id}>
                 <a
                   href={menu.href}
-                  className={`font-semibold transition-all duration-300 ${activeSection === menu.href.replace("#", "") ? "text-green-500" : ""
-                    }`}
-                >
+                  className={`font-semibold transition-all duration-300 ${activeSection === menu.href.replace("#", "") ? "text-green-500" : "" }`} >
                   {menu.name}
                 </a>
               </li>
@@ -64,69 +61,21 @@ function Navbar() {
           </ul>
 
           <div className="dropdown dropdown-end tablet:hidden">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-circle btn-sm bg-transparent border-0 shadow-none"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                className="bi bi-list"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-                />
-              </svg>
+
+            <div tabIndex={0} role="button" className="btn btn-circle btn-sm bg-transparent border-0 shadow-none" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16" > <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" /> </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content menu bg-white backdrop-blur-sm rounded-box z-1 w-52 p-2 shadow-sm"
-            >
-              <li>
+
+            <ul tabIndex={0} className="dropdown-content menu border border-green-200 dark:border-green-200/10 bg-green-50/90 dark:bg-slate-950/90 backdrop-blur-sm rounded-box z-1 w-52 p-2 shadow-sm">
+            {menus.map((menu) => (
+              <li key={menu.id}>
                 <a
-                  href="#home"
-                  className={`font-semibold transition-all duration-300 border border-transparent hover:text-green-500 hover:border-green-200 hover:bg-green-50/70 backdrop-blur-sm ${activeSection === "home" ? "text-green-500" : ""}`}
-                >
-                  Home
+                  href={menu.href}
+                  className={`font-semibold transition-all duration-300 ${activeSection === menu.href.replace("#", "") ? "text-green-500" : "" }`} >
+                  {menu.name}
                 </a>
               </li>
-              <li>
-                <a
-                  href="#services"
-                  className={`font-semibold transition-all duration-300 border border-transparent hover:text-green-500 hover:border-green-200 hover:bg-green-50/70 backdrop-blur-sm ${activeSection === "services" ? "text-green-500" : ""}`}
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#resume"
-                  className={`font-semibold transition-all duration-300 border border-transparent hover:text-green-500 hover:border-green-200 hover:bg-green-50/70 backdrop-blur-sm ${activeSection === "resume" ? "text-green-500" : ""}`}
-                >
-                  Resume
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#works"
-                  className={`font-semibold transition-all duration-300 border border-transparent hover:text-green-500 hover:border-green-200 hover:bg-green-50/70 backdrop-blur-sm ${activeSection === "works" ? "text-green-500" : ""}`}
-                >
-                  Work
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contacts"
-                  className={`font-semibold transition-all duration-300 border border-transparent hover:text-green-500 hover:border-green-200 hover:bg-green-50/70 backdrop-blur-sm ${activeSection === "contacts" ? "text-green-500" : ""}`}
-                >
-                  Contact
-                </a>
-              </li>
+            ))}
             </ul>
 
           </div>
