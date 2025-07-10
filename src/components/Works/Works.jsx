@@ -28,7 +28,7 @@ const projects = works.items
         <h2 className="font-bold text-green-500">{works.section}</h2>
       </div>
 
-      <div className="grid grid-cols-1 laptop:grid-cols-2 gap-3 laptop:gap-12 items-center">
+      <div className="grid grid-cols-1 laptop:grid-cols-2 gap-5 tablet:gap-8 laptop:gap-12 items-start">
         <AnimatePresence mode="wait">
           <motion.div
             key={project.id + "-text"}

@@ -16,7 +16,7 @@ function Resume() {
         <h2 className="font-bold text-green-500">{resume.info.section}</h2>
       </div>
 
-      <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-5 tablet:gap-12 laptop:gap-32">
+      <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-5 tablet:gap-8 laptop:gap-12">
         <div>
           <div>
             <h2 className="text-3xl font-semibold mb-3">{resume.info.title}</h2>
@@ -30,7 +30,7 @@ function Resume() {
               onClick={() => setActiveTab("skills")}
               className={`btn w-full ${activeTab === "skills"
                 ? "bg-green-500 text-white"
-                : "bg-green-50 hover:bg-green-100 border-green-200 text-green-500"
+                : "bg-green-50 hover:bg-green-100 border-green-200 text-green-500 dark:bg-green-50/10 dark:border-green-200/10 hover:dark:bg-green-100/20"
                 }`}
             >
               {resume.info.tabs.skills}
@@ -39,7 +39,7 @@ function Resume() {
               onClick={() => setActiveTab("experience")}
               className={`btn w-full ${activeTab === "experience"
                 ? "bg-green-500 text-white"
-                : "bg-green-50 hover:bg-green-100 border-green-200 text-green-500"
+                : "bg-green-50 hover:bg-green-100 border-green-200 text-green-500 dark:bg-green-50/10 dark:border-green-200/10 hover:dark:bg-green-100/20"
                 }`}
             >
               {resume.info.tabs.experience}
@@ -48,7 +48,7 @@ function Resume() {
               onClick={() => setActiveTab("education")}
               className={`btn w-full ${activeTab === "education"
                 ? "bg-green-500 text-white"
-                : "bg-green-50 hover:bg-green-100 border-green-200 text-green-500"
+                : "bg-green-50 hover:bg-green-100 border-green-200 text-green-500 dark:bg-green-50/10 dark:border-green-200/10 hover:dark:bg-green-100/20"
                 }`}
             >
 
@@ -58,7 +58,7 @@ function Resume() {
               onClick={() => setActiveTab("about")}
               className={`btn w-full ${activeTab === "about"
                 ? "bg-green-500 text-white"
-                : "bg-green-50 hover:bg-green-100 border-green-200 text-green-500"
+                : "bg-green-50 hover:bg-green-100 border-green-200 text-green-500 dark:bg-green-50/10 dark:border-green-200/10 hover:dark:bg-green-100/20"
                 }`}
             >
               {resume.info.tabs.about}
@@ -236,7 +236,7 @@ function Resume() {
                       {resume.skills.description}
                     </p>
                   </div>
-                  <div className="grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4 mt-5 gap-4 max-h-[350px] overflow-y-auto">
+                  <div className="grid grid-cols-2 laptop:grid-cols-3 mt-5 gap-4 max-h-[350px] overflow-y-auto">
 
                     {
                       resume.skills.list.map((skill, index) => (
