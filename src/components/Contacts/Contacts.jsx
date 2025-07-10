@@ -76,7 +76,7 @@ function Contacts() {
         <h2 className="font-bold text-green-500">{contacts.section}</h2>
       </div>
       <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6 laptop:gap-12">
-        <div className="p-5 laptop:p-8 border border-zinc-200 dark:border-zinc-200/10 bg-green-50/20 rounded-md order-2 laptop:order-1">
+        <div className="p-5 laptop:p-8 border border-zinc-200 dark:border-zinc-200/10 bg-green-50/20 dark:bg-green-50/10 rounded-md order-2 laptop:order-1">
           <div className="pb-5 laptop:pb-8">
             <h4 className="font-bold text-green-500 text-2xl laptop:text-3xl">
               {contacts.form.title}
