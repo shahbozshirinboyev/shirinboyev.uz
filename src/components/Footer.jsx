@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <div className='c_container'>
-      <div className="mockup-code w-full">
+      <div className="mockup-code w-full dark:bg-green-50/10 border dark:border-green-200/10">
         <pre data-prefix="$"><code className="text-xs tablet:text-sm laptop:text-md">{footer.connecting}</code></pre>
         <pre data-prefix=">"><code className="text-xs tablet:text-sm laptop:text-md">{footer.downloading}</code></pre>
         <pre data-prefix=">" className="text-warning text-xs tablet:text-sm laptop:text-md"><code>{footer.warning}</code></pre>

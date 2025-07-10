@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import toast from "react-hot-toast";
-import { span } from "motion/react-client";
 
 function Contacts() {
   const { t } = useTranslation();
@@ -32,7 +31,7 @@ function Contacts() {
     setLoading(true);
     const botToken = "7747039478:AAElIhBlKkNvwrSOLRZ8HmNBRucLqsELAeY";
     const chatId = "660100854";
-    const text = `Yangi kontakt so'rovi:\nLang: ${userLang}\nIsm: ${formData.first_name}\nFamiliya: ${formData.last_name}\nEmail: ${formData.email}\nTelefon: ${formData.phone}\nXizmat: ${formData.service}\n\nXabar: ${formData.message}`;
+    const text = `Message:\n\nLanguage: ${userLang}\nFirst name: ${formData.first_name}\nLast name: ${formData.last_name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nPurpose: ${formData.service}\n\nMessage: ${formData.message}`;
     try {
       const res = await fetch(
         `https://api.telegram.org/bot${botToken}/sendMessage`,
@@ -51,7 +50,7 @@ function Contacts() {
       const data = await res.json();
 
       if (data.ok) {
-        toast.success("Xabar muvaffaqiyatli yuborildi!");
+        toast.success(t("toast.success"));
         setFormData({
           first_name: "",
           last_name: "",
@@ -61,10 +60,10 @@ function Contacts() {
           message: "",
         });
       } else {
-        toast.error("Xabar yuborishda xatolik yuz berdi.");
+        toast.error(t("toast.error"));
       }
     } catch (err) {
-      toast.error("Server bilan bog'lanib bo'lmadi.");
+      toast.error(t("toast.network"));
       console.error(err);
     } finally {
       setLoading(false);
@@ -73,15 +72,19 @@ function Contacts() {
 
   return (
     <div id="contacts" className="c_container">
-      <div className="border border-green-200 bg-green-50/70 backdrop-blur-sm p-2 mb-4 rounded-sm">
+      <div className="border border-green-200 dark:border-green-200/10 bg-green-50/70 dark:bg-green-50/10 backdrop-blur-sm p-2 mb-4 rounded-sm">
         <h2 className="font-bold text-green-500">{contacts.section}</h2>
       </div>
       <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6 laptop:gap-12">
-        <div className="p-5 laptop:p-8 border border-zinc-200 rounded-md order-2 laptop:order-1">
-          <h4 className="font-semibold text-green-500 text-3xl">
-            {contacts.form.title}
-          </h4>
-          <p className="my-3">{contacts.form.description}</p>
+        <div className="p-5 laptop:p-8 border border-zinc-200 dark:border-zinc-200/10 bg-green-50/10 rounded-md order-2 laptop:order-1">
+          <div className="pb-5 laptop:pb-8">
+            <h4 className="font-bold text-green-500 text-2xl laptop:text-3xl">
+              {contacts.form.title}
+            </h4>
+            <p className="font-semibold opacity-70 text-sm tablet:text-md laptop:text-lg">
+              {contacts.form.description}
+            </p>
+          </div>
 
           <form onSubmit={sendMessageToTelegram}>
             <div className="grid grid-cols-2 gap-4">
@@ -91,7 +94,7 @@ function Contacts() {
                 value={formData.first_name}
                 onChange={handleChange}
                 placeholder={contacts.form.first_name}
-                className="input input-sm tablet:input-md"
+                className="input input-sm tablet:input-md placeholder:text-zinc-700 dark:placeholder:text-zinc-300"
                 required
               />
               <input
@@ -100,7 +103,7 @@ function Contacts() {
                 value={formData.last_name}
                 onChange={handleChange}
                 placeholder={contacts.form.last_name}
-                className="input input-sm tablet:input-md"
+                className="input input-sm tablet:input-md placeholder:text-zinc-700 dark:placeholder:text-zinc-300"
                 required
               />
               <input
@@ -109,7 +112,7 @@ function Contacts() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder={contacts.form.email}
-                className="input input-sm tablet:input-md"
+                className="input input-sm tablet:input-md placeholder:text-zinc-700 dark:placeholder:text-zinc-300"
                 required
               />
               <input
@@ -118,7 +121,7 @@ function Contacts() {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder={contacts.form.phone}
-                className="input input-sm tablet:input-md"
+                className="input input-sm tablet:input-md placeholder:text-zinc-700 dark:placeholder:text-zinc-300"
               />
             </div>
 
@@ -126,29 +129,30 @@ function Contacts() {
               name="service"
               value={formData.service}
               onChange={handleChange}
-              className="select select-sm tablet:select-md w-full my-4 text-zinc-400"
+              className="select select-sm tablet:select-md w-full my-4 text-zinc-700 dark:text-zinc-300"
               required
             >
               <option value="" disabled>
                 {contacts.form.service}
               </option>
-              <option>{contacts.form.services.createWebsite}</option>
-              <option>{contacts.form.services.createApi}</option>
-              <option>{contacts.form.services.other}</option>
+              <option>{contacts.form.services.businessMeeting}</option>
+              <option>{contacts.form.services.hireRequest}</option>
+              <option>{contacts.form.services.jobOffer}</option>
+              <option>{contacts.form.services.otherRequest}</option>
             </select>
 
             <textarea
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="textarea w-full"
+              className="textarea w-full placeholder:text-zinc-700 dark:placeholder:text-zinc-300"
               placeholder={contacts.form.message}
               required
             ></textarea>
 
             <button
               type="submit"
-              className="mt-4 btn btn-sm laptop:btn-md text-green-500 dark:text-red-500"
+              className="mt-4 btn btn-sm laptop:btn-md"
               disabled={loading}
             >
               {loading ? (
@@ -165,7 +169,7 @@ function Contacts() {
 
         <div className="flex flex-col justify-center gap-4 order-1 laptop:order-2">
           <div className="flex gap-3 justify-start items-center">
-            <div className="w-[50px] h-[50px] flex justify-center items-center bg-green-50 border border-green-200 rounded-sm">
+            <div className="w-[50px] h-[50px] flex justify-center items-center bg-green-50 dark:bg-green-50/10 border dark:border-red-200/10 border-green-200  rounded-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -184,14 +188,14 @@ function Contacts() {
               <span className="text-sm font-semibold opacity-70">
                 {contacts.info.phone.name}
               </span>
-              <p className="font-semibold leading-4">
+              <p className="font-semibold leading-4 text-sm tablet:text-md">
                 {contacts.info.phone.value}
               </p>
             </div>
           </div>
 
           <div className="flex gap-3 justify-start items-center">
-            <div className="w-[50px] h-[50px] flex justify-center items-center bg-green-50 border border-green-200 rounded-sm">
+            <div className="w-[50px] h-[50px] flex justify-center items-center bg-green-50 border dark:bg-green-50/10 dark:border-red-200/10 border-green-200 rounded-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -207,14 +211,14 @@ function Contacts() {
               <span className="text-sm font-semibold opacity-70">
                 {contacts.info.telegram.name}
               </span>
-              <p className="font-semibold leading-4">
+              <p className="font-semibold leading-4 text-sm tablet:text-md">
                 {contacts.info.telegram.value}
               </p>
             </div>
           </div>
 
           <div className="flex gap-3 justify-start items-center">
-            <div className="w-[50px] h-[50px] flex justify-center items-center bg-green-50 border border-green-200 rounded-sm">
+            <div className="w-[50px] h-[50px] flex justify-center items-center bg-green-50 border dark:bg-green-50/10 dark:border-red-200/10 border-green-200 rounded-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -230,14 +234,14 @@ function Contacts() {
               <span className="text-sm font-semibold opacity-70">
                 {contacts.info.email.name}
               </span>
-              <p className="font-semibold leading-4">
+              <p className="font-semibold leading-4 text-sm tablet:text-md">
                 {contacts.info.email.value}
               </p>
             </div>
           </div>
 
           <div className="flex gap-3 justify-start items-center">
-            <div className="w-[50px] h-[50px] flex justify-center items-center bg-green-50 border border-green-200 rounded-sm">
+            <div className="w-[50px] h-[50px] flex justify-center items-center bg-green-50 border dark:bg-green-50/10 dark:border-red-200/10 border-green-200 rounded-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -253,7 +257,7 @@ function Contacts() {
               <span className="text-sm font-semibold opacity-70">
                 {contacts.info.address.name}
               </span>
-              <p className="font-semibold leading-4">
+              <p className="font-semibold leading-4 text-sm tablet:text-md">
                 {contacts.info.address.value}
               </p>
             </div>

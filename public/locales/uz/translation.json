@@ -345,22 +345,23 @@
     ]
   },
   "contacts": {
-    "section": "Kontaktlar",
+    "section": "Bog‘lanish",
     "form": {
-      "title": "Keling, birga ishlaylik",
-      "description": "Iltimos, quyidagi formani to‘ldiring. Tez orada siz bilan bog‘lanaman.",
-      "first_name": "Ismingiz",
-      "last_name": "Familiyangiz",
-      "email": "Email manzilingiz",
-      "phone": "Telefon raqamingiz",
-      "service": "Xizmat turini tanlang",
+      "title": "Hamkorlikka tayyorman",
+      "description": "Formani to‘ldiring — siz bilan tez orada bog‘lanaman.",
+      "first_name": "Ism",
+      "last_name": "Familiya",
+      "email": "Elektron pochta",
+      "phone": "Telefon raqam",
+      "service": "Maqsad",
       "services": {
-        "createWebsite": "Sayt yaratish",
-        "createApi": "API yaratish",
-        "other": "Boshqa"
+        "businessMeeting": "Biznes uchrashuvi",
+        "hireRequest": "Ish berish",
+        "jobOffer": "Ishga taklif",
+        "otherRequest": "Boshqa"
       },
-      "message": "Xabaringizni yozing",
-      "submit": "Xabar yuborish",
+      "message": "Xabar",
+      "submit": "Yuborish",
       "sending": "Yuborilmoqda..."
     },
     "info": {
@@ -370,15 +371,15 @@
       },
       "telegram": {
         "name": "Telegram",
-        "value": "Telefon"
+        "value": "t.me/sh_shirinboyev"
       },
       "email": {
-        "name": "Email",
+        "name": "Elektron pochta",
         "value": "shahboz.sh.b@gmail.com"
       },
       "address": {
         "name": "Manzil",
-        "value": "Tashkent city, Bektemir district, Musaffo area"
+        "value": "Tashkent, Bektemir, Musaffo Maskan TJM"
       }
     }
   },
@@ -388,5 +389,10 @@
     "warning": "Internet sekin ishlayapti",
     "error": "Footer topilmadi (404) :(",
     "suggestion": "Yaxshiroq Wi-Fi bilan qayta urinib ko‘ring :)"
-  }
+  },
+  "toast": {
+  "success": "Xabar muvaffaqiyatli yuborildi!",
+  "error": "Xabar yuborishda xatolik yuz berdi.",
+  "network": "Server bilan bog'lanib bo'lmadi."
+}
 }
