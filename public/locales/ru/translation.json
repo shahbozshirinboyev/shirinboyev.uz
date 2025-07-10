@@ -146,46 +146,120 @@
     },
     "experience": {
       "title": "Опыт",
-      "description": "Я получил практический опыт в следующих организациях:",
+      "description": "Через следующие организации я приобрел практические навыки и получил опыт работы над реальными проектами.",
       "items": [
         {
-          "years": "2023 - по настоящее время",
-          "company": "Пример компании",
-          "role": "Фронтенд-разработчик"
+          "years": "Июнь 2024 – Работаю сейчас",
+          "company": "ООО \"WEYA\"",
+          "role": "Frontend-разработчик, Руководитель проекта"
+        },
+        {
+          "years": "Декабрь 2023 – Май 2024",
+          "company": "ООО \"Akmalovich Elektroniks\"",
+          "role": "Инженер компьютерных систем"
+        },
+        {
+          "years": "Сентябрь 2022 – Ноябрь 2023",
+          "company": "ООО \"ProBrend\"",
+          "role": "Веб-дизайнер, Frontend-разработчик"
         }
       ]
     },
     "skills": {
       "title": "Навыки",
-      "description": "Я регулярно использую следующие технологии и инструменты:",
+      "description": "Регулярно использую следующие технологии, языки программирования и инструменты. Они помогают мне создавать эффективные и качественные проекты.",
       "list": [
         {
-          "name": "JavaScript",
+          "name": "HTML",
+          "icon": "./images/skills/html.png"
+        },
+        {
+          "name": "CSS",
+          "icon": "./images/skills/css.png"
+        },
+        {
+          "name": "Sass",
+          "icon": "/images/skills/sass.png"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "./images/skills/bootstrap.png"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "./images/skills/tailwindcss.png"
+        },
+        {
+          "name": "DaisyUI",
+          "icon": "./images/skills/daisyui.png"
+        },
+        {
+          "name": "Javascript",
           "icon": "./images/skills/javascript.png"
         },
         {
           "name": "React",
-          "icon": "./images/skills/javascript.png"
+          "icon": "./images/skills/react.png"
         },
         {
-          "name": "TailwindCSS",
-          "icon": "/images/skills/tailwindcss.png"
+          "name": "Vite",
+          "icon": "./images/skills/vite.png"
         },
         {
-          "name": "Python",
-          "icon": "./images/skills/javascript.png"
+          "name": "Framer Motion",
+          "icon": "./images/skills/motion.png"
+        },
+        {
+          "name": "i18next",
+          "icon": "./images/skills/i18next.png"
+        },
+        {
+          "name": "Git",
+          "icon": "./images/skills/git.png"
         },
         {
           "name": "GitHub",
-          "icon": "./images/skills/javascript.png"
+          "icon": "./images/skills/github.png"
         },
         {
-          "name": "HTML",
-          "icon": "./images/skills/javascript.png"
+          "name": "Figma",
+          "icon": "./images/skills/figma.png"
         },
         {
-          "name": "CSS",
-          "icon": "./images/skills/javascript.png"
+          "name": "Python",
+          "icon": "./images/skills/python.png"
+        },
+        {
+          "name": "Django",
+          "icon": "./images/skills/django.png"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "./images/skills/postgresql.png"
+        },
+        {
+          "name": "Django REST framework",
+          "icon": "./images/skills/rest.png"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "./images/skills/fastapi.png"
+        },
+        {
+          "name": "WebSocket",
+          "icon": "./images/skills/websocket.png"
+        },
+        {
+          "name": "Firebase",
+          "icon": "./images/skills/firebase.png"
+        },
+        {
+          "name": "Supabase",
+          "icon": "./images/skills/supabase.png"
+        },
+        {
+          "name": "Telegram API",
+          "icon": "./images/skills/telegramapi.png"
         }
       ]
     }
@@ -284,8 +358,8 @@
     "suggestion": "Попробуйте снова с лучшим Wi-Fi :)"
   },
   "toast": {
-  "success": "Сообщение успешно отправлено!",
-  "error": "Произошла ошибка при отправке.",
-  "network": "Не удалось подключиться к серверу."
-}
+    "success": "Сообщение успешно отправлено!",
+    "error": "Произошла ошибка при отправке.",
+    "network": "Не удалось подключиться к серверу."
+  }
 }

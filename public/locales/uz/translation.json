@@ -149,125 +149,117 @@
       "description": "Quyidagi tashkilotlar orqali amaliy ko‘nikmalar orttirdim va real loyihalar ustida ishlash tajribasiga ega bo‘lganman.",
       "items": [
         {
-          "years": "2024, Iyun - Hozirgacha",
+          "years": "Iyun 2024 - Hozirgacha",
           "company": "\"WEYA\" MCHJ",
-          "role": "Dasturiy ta'minot muhandisi"
+          "role": "Frontend dasturchi, Loyiha boshqaruvchisi"
         },
         {
-          "years": "2023, Dekabr - 2024, May",
+          "years": "Dekabr 2023 - May 2024",
           "company": "\"Akmalovich Elektroniks\" MCHJ",
           "role": "Kompyuter tizimlari muhandisi"
         },
         {
-          "years": "2022, Sentyabr - 2023, Noyabr",
+          "years": "Sentyabr 2022 - Noyabr 2023",
           "company": "\"ProBrend\" MCHJ",
-          "role": "Veb-dizayner"
+          "role": "Veb-dizayner, Frontend dasturchi"
         }
       ]
     },
     "skills": {
       "title": "Ko‘nikmalar",
-      "description": "Quyidagi texnologiyalar va vositalardan muntazam foydalanaman:",
+      "description": "Quyidagi texnologiyalar, dasturlash tillari va vositalardan muntazam foydalanaman. Ular yordamida samarali va sifatli loyihalar yaratishga intilaman.",
       "list": [
         {
-          "name": "JavaScript",
+          "name": "HTML",
+          "icon": "./images/skills/html.png"
+        },
+        {
+          "name": "CSS",
+          "icon": "./images/skills/css.png"
+        },
+        {
+          "name": "Sass",
+          "icon": "/images/skills/sass.png"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "./images/skills/bootstrap.png"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "./images/skills/tailwindcss.png"
+        },
+        {
+          "name": "DaisyUI",
+          "icon": "./images/skills/daisyui.png"
+        },
+        {
+          "name": "Javascript",
           "icon": "./images/skills/javascript.png"
         },
         {
           "name": "React",
-          "icon": "./images/skills/javascript.png"
+          "icon": "./images/skills/react.png"
         },
         {
-          "name": "TailwindCSS",
-          "icon": "/images/skills/tailwindcss.png"
+          "name": "Vite",
+          "icon": "./images/skills/vite.png"
         },
         {
-          "name": "Python",
-          "icon": "./images/skills/javascript.png"
+          "name": "Framer Motion",
+          "icon": "./images/skills/motion.png"
         },
         {
-          "name": "GitHub",
-          "icon": "./images/skills/javascript.png"
+          "name": "i18next",
+          "icon": "./images/skills/i18next.png"
         },
         {
-          "name": "HTML",
-          "icon": "./images/skills/javascript.png"
-        },
-        {
-          "name": "Python",
-          "icon": "./images/skills/javascript.png"
+          "name": "Git",
+          "icon": "./images/skills/git.png"
         },
         {
           "name": "GitHub",
-          "icon": "./images/skills/javascript.png"
+          "icon": "./images/skills/github.png"
         },
         {
-          "name": "HTML",
-          "icon": "./images/skills/javascript.png"
-        },
-        {
-          "name": "Python",
-          "icon": "./images/skills/javascript.png"
-        },
-        {
-          "name": "GitHub",
-          "icon": "./images/skills/javascript.png"
-        },
-        {
-          "name": "HTML",
-          "icon": "./images/skills/javascript.png"
+          "name": "Figma",
+          "icon": "./images/skills/figma.png"
         },
         {
           "name": "Python",
-          "icon": "./images/skills/javascript.png"
+          "icon": "./images/skills/python.png"
         },
         {
-          "name": "GitHub",
-          "icon": "./images/skills/javascript.png"
+          "name": "Django",
+          "icon": "./images/skills/django.png"
         },
         {
-          "name": "HTML",
-          "icon": "./images/skills/javascript.png"
+          "name": "PostgreSQL",
+          "icon": "./images/skills/postgresql.png"
         },
         {
-          "name": "Python",
-          "icon": "./images/skills/javascript.png"
+          "name": "Django REST framework",
+          "icon": "./images/skills/rest.png"
         },
         {
-          "name": "GitHub",
-          "icon": "./images/skills/javascript.png"
+          "name": "FastAPI",
+          "icon": "./images/skills/fastapi.png"
         },
         {
-          "name": "HTML",
-          "icon": "./images/skills/javascript.png"
+          "name": "WebSocket",
+          "icon": "./images/skills/websocket.png"
         },
         {
-          "name": "Python",
-          "icon": "./images/skills/javascript.png"
+          "name": "Firebase",
+          "icon": "./images/skills/firebase.png"
         },
         {
-          "name": "GitHub",
-          "icon": "./images/skills/javascript.png"
+          "name": "Supabase",
+          "icon": "./images/skills/supabase.png"
         },
         {
-          "name": "HTML",
-          "icon": "./images/skills/javascript.png"
-        },
-        {
-          "name": "Python",
-          "icon": "./images/skills/javascript.png"
-        },
-        {
-          "name": "GitHub",
-          "icon": "./images/skills/javascript.png"
-        },
-        {
-          "name": "HTML",
-          "icon": "./images/skills/javascript.png"
-        },
-        {
-          "name": "CSS",
-          "icon": "./images/skills/javascript.png"
+          "name": "Telegram API",
+          "icon": "./images/skills/telegramapi.png"
         }
       ]
     }
@@ -358,7 +350,7 @@
       }
     }
   },
-   "footer": {
+  "footer": {
     "connecting": "Ulanmoqda...",
     "downloading": "Footer yuklanmoqda...",
     "warning": "Internet sekin ishlayapti",
@@ -366,8 +358,8 @@
     "suggestion": "Yaxshiroq Wi-Fi bilan qayta urinib ko‘ring :)"
   },
   "toast": {
-  "success": "Xabar muvaffaqiyatli yuborildi!",
-  "error": "Xabar yuborishda xatolik yuz berdi.",
-  "network": "Server bilan bog'lanib bo'lmadi."
-}
+    "success": "Xabar muvaffaqiyatli yuborildi!",
+    "error": "Xabar yuborishda xatolik yuz berdi.",
+    "network": "Server bilan bog'lanib bo'lmadi."
+  }
 }

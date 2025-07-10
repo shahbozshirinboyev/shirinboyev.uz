@@ -146,46 +146,120 @@
     },
     "experience": {
       "title": "Experience",
-      "description": "I have gained practical experience in the following organizations:",
+      "description": "Through the following organizations, I gained practical skills and hands-on experience working on real-world projects.",
       "items": [
         {
-          "years": "2023 - Present",
-          "company": "Sample Company",
-          "role": "Frontend Developer"
+          "years": "June 2024 – Present",
+          "company": "\"WEYA\" LLC",
+          "role": "Frontend Developer, Project Manager"
+        },
+        {
+          "years": "December 2023 – May 2024",
+          "company": "\"Akmalovich Electronics\" LLC",
+          "role": "Computer Systems Engineer"
+        },
+        {
+          "years": "September 2022 – November 2023",
+          "company": "\"ProBrend\" LLC",
+          "role": "Web Designer, Frontend Developer"
         }
       ]
     },
     "skills": {
       "title": "Skills",
-      "description": "I regularly use the following technologies and tools:",
+      "description": "I regularly use the following technologies, programming languages, and tools. They help me build efficient and high-quality projects.",
       "list": [
         {
-          "name": "JavaScript",
+          "name": "HTML",
+          "icon": "./images/skills/html.png"
+        },
+        {
+          "name": "CSS",
+          "icon": "./images/skills/css.png"
+        },
+        {
+          "name": "Sass",
+          "icon": "/images/skills/sass.png"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "./images/skills/bootstrap.png"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "./images/skills/tailwindcss.png"
+        },
+        {
+          "name": "DaisyUI",
+          "icon": "./images/skills/daisyui.png"
+        },
+        {
+          "name": "Javascript",
           "icon": "./images/skills/javascript.png"
         },
         {
           "name": "React",
-          "icon": "./images/skills/javascript.png"
+          "icon": "./images/skills/react.png"
         },
         {
-          "name": "TailwindCSS",
-          "icon": "/images/skills/tailwindcss.png"
+          "name": "Vite",
+          "icon": "./images/skills/vite.png"
         },
         {
-          "name": "Python",
-          "icon": "./images/skills/javascript.png"
+          "name": "Framer Motion",
+          "icon": "./images/skills/motion.png"
+        },
+        {
+          "name": "i18next",
+          "icon": "./images/skills/i18next.png"
+        },
+        {
+          "name": "Git",
+          "icon": "./images/skills/git.png"
         },
         {
           "name": "GitHub",
-          "icon": "./images/skills/javascript.png"
+          "icon": "./images/skills/github.png"
         },
         {
-          "name": "HTML",
-          "icon": "./images/skills/javascript.png"
+          "name": "Figma",
+          "icon": "./images/skills/figma.png"
         },
         {
-          "name": "CSS",
-          "icon": "./images/skills/javascript.png"
+          "name": "Python",
+          "icon": "./images/skills/python.png"
+        },
+        {
+          "name": "Django",
+          "icon": "./images/skills/django.png"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "./images/skills/postgresql.png"
+        },
+        {
+          "name": "Django REST framework",
+          "icon": "./images/skills/rest.png"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "./images/skills/fastapi.png"
+        },
+        {
+          "name": "WebSocket",
+          "icon": "./images/skills/websocket.png"
+        },
+        {
+          "name": "Firebase",
+          "icon": "./images/skills/firebase.png"
+        },
+        {
+          "name": "Supabase",
+          "icon": "./images/skills/supabase.png"
+        },
+        {
+          "name": "Telegram API",
+          "icon": "./images/skills/telegramapi.png"
         }
       ]
     }
@@ -284,9 +358,8 @@
     "suggestion": "Try again with better Wi-Fi :)"
   },
   "toast": {
-  "success": "Message sent successfully!",
-  "error": "An error occurred while sending the message.",
-  "network": "Failed to connect to the server."
-}
-
+    "success": "Message sent successfully!",
+    "error": "An error occurred while sending the message.",
+    "network": "Failed to connect to the server."
+  }
 }
