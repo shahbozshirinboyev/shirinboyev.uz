@@ -51,26 +51,26 @@
     "items": [
       {
         "number": "01",
-        "title": "Web Development",
-        "description": "Building complex and modern web applications.",
+        "title": "Website and Web App Development",
+        "description": "I create landing pages, portfolios, corporate websites, and web applications with responsive design and modern technologies.",
         "link": ""
       },
       {
         "number": "02",
-        "title": "UI/UX Design",
-        "description": "Creating user-friendly and aesthetic interface design.",
+        "title": "Frontend Development with UI Design",
+        "description": "I develop aesthetic and interactive user interfaces based on Figma or other design tools using React, Tailwind CSS, and animations.",
         "link": ""
       },
       {
         "number": "03",
-        "title": "Logo Design",
-        "description": "Creative and memorable logo design for your brand.",
+        "title": "Backend and API Services",
+        "description": "I build databases, authentication systems, admin panels, and REST APIs using Django or FastAPI, fully integrated with the frontend.",
         "link": ""
       },
       {
         "number": "04",
-        "title": "SEO",
-        "description": "Optimizing your website to rank higher in search engines.",
+        "title": "Multilingual Websites and SEO Optimization",
+        "description": "I localize your website in Uzbek, Russian, and English and optimize it for search engines using meta tags, OpenGraph, and structured page layout.",
         "link": ""
       }
     ]
