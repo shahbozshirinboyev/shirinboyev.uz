@@ -12,8 +12,8 @@ function Resume() {
       id="resume"
       className="c_container"
     >
-      <div className="border border-green-200 dark:border-green-200/10 bg-green-50/70 dark:bg-green-50/10 backdrop-blur-sm p-2 mb-4 rounded-sm">
-        <h2 className="font-bold text-green-500">{resume.info.section}</h2>
+      <div className="c_section">
+        <h2>{resume.info.section}</h2>
       </div>
 
       <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-5 tablet:gap-8 laptop:gap-12">

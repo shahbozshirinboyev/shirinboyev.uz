@@ -31,7 +31,15 @@ html:not(.dark) {
 }
 
 .c_container {
-  @apply container mx-auto px-4 tablet:px-0 mt-12 tablet:mt-16 laptop:mt-20 scroll-mt-14;
+  @apply container mx-auto px-4 tablet:px-0 mt-14 tablet:mt-16 laptop:mt-20 scroll-mt-15;
+}
+
+.c_section {
+  @apply border border-green-200 dark:border-green-200/10 bg-green-50/70 dark:bg-green-50/10 backdrop-blur-sm p-2 mb-5 rounded-sm;
+}
+
+.c_section h2 {
+  @apply font-bold text-green-500;
 }
 
 .custom-list li::marker {
