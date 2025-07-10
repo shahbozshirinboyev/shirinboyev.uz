@@ -266,10 +266,10 @@
     }
   },
   "footer": {
-    "connecting": "Connecting...",
-    "downloading": "Downloading footer component...",
-    "warning": "Warning: Slow internet detected",
-    "error": "Error: Footer not found on server (404) :(",
-    "suggestion": "Suggestion: Try again with better Wi-Fi :)"
-  }
+  "connecting": "Connecting...",
+  "downloading": "Loading footer...",
+  "warning": "Slow internet detected",
+  "error": "Footer not found (404) :(",
+  "suggestion": "Try again with better Wi-Fi :)"
+}
 }

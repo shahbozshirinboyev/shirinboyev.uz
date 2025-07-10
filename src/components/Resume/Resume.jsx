@@ -86,7 +86,7 @@ function Resume() {
                      {resume.about.description}
                     </p>
                   </div>
-                  <div className="grid grid-cols-1 laptop:grid-cols-2 mt-5 gap-4 h-[350px]">
+                  <div className="grid grid-cols-1 laptop:grid-cols-2 mt-5 gap-4 max-h-[350px]">
                     <ul className="flex flex-col gap-3">
 
                       <li className="flex gap-3 font-semibold">
@@ -152,7 +152,7 @@ function Resume() {
                     </p>
                   </div>
 
-                  <div className="grid grid-cols-1 laptop:grid-cols-2 mt-5 gap-4 h-[350px] overflow-y-scroll">
+                  <div className="grid grid-cols-1 laptop:grid-cols-2 mt-5 gap-4 max-h-[350px] overflow-y-auto">
 
                     {
                       resume.education.items.map((education, index) => (
@@ -195,7 +195,7 @@ function Resume() {
                     </p>
                   </div>
 
-                  <div className="grid grid-cols-1 laptop:grid-cols-2 mt-5 gap-4 h-[350px] overflow-y-scroll">
+                  <div className="grid grid-cols-1 laptop:grid-cols-2 mt-5 gap-4 max-h-[350px] overflow-y-auto">
 
                     {
                       resume.experience.items.map((experience, index) => (
@@ -236,7 +236,7 @@ function Resume() {
                       {resume.skills.description}
                     </p>
                   </div>
-                  <div className="grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4 mt-5 gap-4 h-[350px] overflow-y-scroll">
+                  <div className="grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4 mt-5 gap-4 max-h-[350px] overflow-y-auto">
 
                     {
                       resume.skills.list.map((skill, index) => (

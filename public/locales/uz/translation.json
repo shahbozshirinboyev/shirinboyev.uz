@@ -382,11 +382,11 @@
       }
     }
   },
-  "footer": {
-    "connecting": "Ulanilmoqda...",
-    "downloading": "Footer komponent yuklanmoqda...",
-    "warning": "Ogohlantirish: Sekin internet aniqlandi",
-    "error": "Xatolik: Footer serverda topilmadi (404) :(",
-    "suggestion": "Taklif: Yaxshi Wi-Fi orqali qayta urinib ko‘ring :)"
+   "footer": {
+    "connecting": "Ulanmoqda...",
+    "downloading": "Footer yuklanmoqda...",
+    "warning": "Internet sekin ishlayapti",
+    "error": "Footer topilmadi (404) :(",
+    "suggestion": "Yaxshiroq Wi-Fi bilan qayta urinib ko‘ring :)"
   }
 }
