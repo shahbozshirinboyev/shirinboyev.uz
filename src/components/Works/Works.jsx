@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import "../Services/Services.css"
 
 function Works() {
   const { t } = useTranslation();
@@ -34,7 +35,7 @@ function Works() {
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
           >
-            <span className="text-5xl laptop:text-8xl font-extrabold">
+            <span className="text-5xl laptop:text-8xl font-extrabold number__font-services">
               {project.number}
             </span>
             <h4 className="text-2xl font-bold">{project.title}</h4>
