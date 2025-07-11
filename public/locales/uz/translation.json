@@ -270,44 +270,88 @@
       {
         "id": 1,
         "number": "01",
-        "title": "Portfolio sayti",
-        "description": "React va Tailwind CSS yordamida yaratilgan shaxsiy portfolio sayti. To‘liq responsiv va qorong‘i rejim tugmasi mavjud.",
+        "title": "os-services.uz",
+        "description": "OS//Services — foydalanuvchilarga operatsion tizimlar, dasturlar, drayverlar va maxsus dasturiy paketlarni tez, ishonchli va qulay tarzda o‘rnatib beruvchi xizmat platformasi. Har xil qurilmalarda (kompyuter, noutbuk, planshet, telefon) to‘g‘ri ko‘rinadi. Yengil va tez yuklanadigan interfeysga ega.",
         "tools": [
-          "React",
-          "TailwindCSS",
-          "Framer Motion"
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "JavaScript",
+          "WOW.js"
         ],
-        "link_web": "https://free-softs.netlify.app/",
-        "link_github": "https://github.com/shahbozshirinboyev",
-        "image": "https://cdn.dribbble.com/userupload/32202836/file/original-ed57e24965cae881f7bc51b0eb5f842b.jpg?resize=1200x900&vertical=center"
+        "link_web": "https://os-services.uz/",
+        "link_github": "https://github.com/shahbozshirinboyev/os-services.uz",
+        "image": "./images/works/os-services.uz.jpg"
       },
       {
         "id": 2,
         "number": "02",
-        "title": "Django yangiliklar sayti",
-        "description": "React va Tailwind CSS yordamida ishlab chiqilgan yangiliklar veb-sayti. Mobil moslashuvchanlik va qorong‘i rejim funksiyasi mavjud.",
+        "title": "weya.uz",
+        "description": "WEYA — bu Janubiy Koreya va O‘zbekistonda joylashgan global kontent ishlab chiqaruvchi kompaniya bo‘lib, animatsiya, o‘yinlar, interyer dizayni, mahsulot reklamalari, arxitektura va boshqa ko‘plab vizual kontent turlarini yaratishga ixtisoslashgan. Ko'p tillilikni qo'llab quvvatlaydi.",
         "tools": [
+          "Vite",
           "React",
-          "TailwindCSS",
-          "Framer Motion"
+          "Tailwind CSS",
+          "DaisyUI",
+          "Framer Motion",
+          "i18next"
         ],
-        "link_web": "https://free-softs.netlify.app/",
-        "link_github": "https://github.com/shahbozshirinboyev",
-        "image": "https://cdn.dribbble.com/userupload/32202836/file/original-ed57e24965cae881f7bc51b0eb5f842b.jpg?resize=1200x900&vertical=center"
+        "link_web": "https://weya.uz/",
+        "link_github": "https://github.com/shahbozshirinboyev/weya.uz",
+        "image": "./images/works/weya.uz.jpg"
       },
       {
         "id": 3,
         "number": "03",
-        "title": "JavaScript ilovasi",
-        "description": "JavaScript asosida yaratilgan zamonaviy va funksional veb-ilova. Qorong‘i rejim va moslashuvchan dizayn mavjud.",
+        "title": "weya-works.com",
+        "description": "Ichki korporativ tizim — xodimlar va loyihalar bilan ishlash uchun mo‘ljallangan zamonaviy platforma. Xodimlarga vazifa berish, berilgan vazifani chatda muhokama qilish va yana ko'plab imkoniyatlarga ega. Backend qismi Django orqali yaratilgan.",
         "tools": [
+          "Vite",
           "React",
-          "TailwindCSS",
-          "Framer Motion"
+          "Tailwind CSS",
+          "DaisyUI",
+          "SwiperJS",
+          "Axios",
+          "Yet Another React Lightbox",
+          "WebSocket"
         ],
-        "link_web": "https://free-softs.netlify.app/",
-        "link_github": "https://github.com/shahbozshirinboyev",
-        "image": "https://cdn.dribbble.com/userupload/32202836/file/original-ed57e24965cae881f7bc51b0eb5f842b.jpg?resize=1200x900&vertical=center"
+        "link_web": "https://weya-works.com/",
+        "link_github": "https://github.com/shahbozshirinboyev/weya-works.com.git",
+        "image": "./images/works/weya-works.com.jpg"
+      },
+      {
+        "id": 4,
+        "number": "04",
+        "title": "wood-city.uz",
+        "description": "Wood City — yog‘ochdan qurilgan uylar va mebellar ishlab chiqarishga ixtisoslashgan kompaniya. Saytda mijozlar kerakli yug'och mebel yoki uyni tanlab, buyurma berishlari mumkin. Buyurtmalar telegram botga yo'naltirilgan.",
+        "tools": [
+          "Vite",
+          "React",
+          "Tailwind CSS",
+          "DaisyUI",
+          "Axios",
+          "Telegram API"
+        ],
+        "link_web": "https://wood-city.uz/",
+        "link_github": "https://github.com/shahbozshirinboyev/wood-city.uz.git",
+        "image": "./images/works/wood-city.jpg"
+      },
+      {
+        "id": 4,
+        "number": "04",
+        "title": "sofa.wood-city.uz",
+        "description": "Wood City — yumshoq mebellar ishlab chiqarishga ixtisoslashgan kompaniya. Saytda mijozlar kerakli yug'och mebel yoki uyni tanlab, buyurma berishlari mumkin. Buyurtmalar telegram botga yo'naltirilgan.",
+        "tools": [
+          "Vite",
+          "React",
+          "Tailwind CSS",
+          "DaisyUI",
+          "Axios",
+          "Telegram API"
+        ],
+        "link_web": "https://wood-city.uz/",
+        "link_github": "https://github.com/shahbozshirinboyev/wood-city.uz.git",
+        "image": ""
       }
     ]
   },
