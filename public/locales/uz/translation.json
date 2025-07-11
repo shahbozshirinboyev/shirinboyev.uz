@@ -43,7 +43,7 @@
       "years": "Yillik tajriba",
       "repos": "Bajargan loyihalar",
       "languages": "O‘zlashtirilgan texnologiyalar",
-      "commits": "Yozilgan kodlar"
+      "commits": "Kod o‘zgarishlari"
     }
   ],
   "services": {
@@ -151,7 +151,7 @@
         {
           "years": "Iyun 2024 - Hozirgacha",
           "company": "\"WEYA\" MCHJ",
-          "role": "Frontend dasturchi, Loyiha boshqaruvchisi"
+          "role": "Frontend & Backend, Loyiha boshqaruvchisi"
         },
         {
           "years": "Dekabr 2023 - May 2024",
@@ -275,7 +275,7 @@
         "tools": ["HTML", "CSS", "Bootstrap", "JavaScript", "WOW.js"],
         "link_web": "https://os-services.uz/",
         "link_github": "https://github.com/shahbozshirinboyev/os-services.uz",
-        "image": "./images/works/os-services.uz.jpg"
+        "image": "./images/works/os-services.uz.webp"
       },
       {
         "id": 2,
@@ -292,7 +292,7 @@
         ],
         "link_web": "https://weya.uz/",
         "link_github": "https://github.com/shahbozshirinboyev/weya.uz",
-        "image": "./images/works/weya.uz.jpg"
+        "image": "./images/works/weya.uz.webp"
       },
       {
         "id": 3,
@@ -309,7 +309,7 @@
         ],
         "link_web": "https://weya-works.com/",
         "link_github": "https://github.com/shahbozshirinboyev/weya-works.com.git",
-        "image": "./images/works/weya-works.com.jpg"
+        "image": "./images/works/weya-works.com.webp"
       },
       {
         "id": 4,
@@ -326,7 +326,7 @@
         ],
         "link_web": "https://wood-city.uz/",
         "link_github": "https://github.com/shahbozshirinboyev/wood-city.uz.git",
-        "image": "./images/works/wood-city.jpg"
+        "image": "./images/works/wood-city.webp"
       },
       {
         "id": 5,
@@ -344,7 +344,7 @@
         ],
         "link_web": "https://sofa.wood-city.uz/",
         "link_github": "https://github.com/shahbozshirinboyev/sofa.wood-city.uz",
-        "image": "./images/works/sofa.wood-city.uz.jpg"
+        "image": "./images/works/sofa.wood-city.uz.webp"
       },
       {
         "id": 6,
@@ -360,7 +360,20 @@
         ],
         "link_web": "https://admin.wood-city.uz/",
         "link_github": "https://github.com/shahbozshirinboyev/admin.wood-city.uz.git",
-        "image": "./images/works/admin.wood-city.jpg"
+        "image": "./images/works/admin.wood-city.webp"
+      },
+      {
+        "id": 7,
+        "number": "07",
+        "title": "NewsBOX",
+        "description": "Yangiliklarni e'lon qilish va o'qish uchun mo'ljallangan sayt. Foydalanuvchilar ro'yxatdan o'tib, o'z yangiliklarini joylashtirishlari mumkin. Amaliy ish sifatida yaratilgan.",
+        "tools": [
+          "Django",
+          "SQLite3"
+        ],
+        "link_web": "https://newsbox-8wnx.onrender.com/",
+        "link_github": "https://github.com/shahbozshirinboyev/newsbox.git",
+        "image": "./images/works/newsbox.webp"
       }
     ]
   },
