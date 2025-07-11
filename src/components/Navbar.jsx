@@ -47,7 +47,7 @@ function Navbar() {
               <li key={menu.id}>
                 <a
                   href={menu.href}
-                  className={`font-semibold transition-all duration-300 ${activeSection === menu.href.replace("#", "") ? "text-green-500" : "" }`} >
+                  className={`font-semibold hover:opacity-60 transition-all duration-300 ${activeSection === menu.href.replace("#", "") ? "text-green-500" : "" }`} >
                   {menu.name}
                 </a>
               </li>

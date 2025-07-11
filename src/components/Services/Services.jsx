@@ -23,7 +23,7 @@ function Services() {
                   <span className="text-5xl font-extrabold number__font-services group-hover:text-green-500 transition-all duration-300">
                     {item.number}
                   </span>
-                  <div className="rotate-45 group-hover:rotate-0 transition-all duration-500 shadow-none">
+                  <div className="rotate-45 group-hover:-rotate-45 transition-all duration-500 shadow-none">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="35"
