@@ -18,7 +18,7 @@
     {
       "id": 4,
       "href": "#works",
-      "name": "Works"
+      "name": "Projects"
     },
     {
       "id": 5,
@@ -270,44 +270,110 @@
       {
         "id": 1,
         "number": "01",
-        "title": "Portfolio Website",
-        "description": "A personal portfolio website built using React and Tailwind CSS. Fully responsive and includes a dark mode toggle.",
-        "tools": [
-          "React",
-          "TailwindCSS",
-          "Framer Motion"
-        ],
-        "link_web": "https://free-softs.netlify.app/",
-        "link_github": "https://github.com/shahbozshirinboyev",
-        "image": "https://cdn.dribbble.com/userupload/32202836/file/original-ed57e24965cae881f7bc51b0eb5f842b.jpg?resize=1200x900&vertical=center"
+        "title": "os-services.uz",
+        "description": "OS//Services is a service platform for fast, reliable, and convenient installation of operating systems, software, drivers, and special packages. Displays correctly on all devices. Features a lightweight and fast-loading interface.",
+        "tools": ["HTML", "CSS", "Bootstrap", "JavaScript", "WOW.js"],
+        "link_web": "https://os-services.uz/",
+        "link_github": "https://github.com/shahbozshirinboyev/os-services.uz",
+        "image": "./images/works/os-services.uz.webp"
       },
       {
         "id": 2,
         "number": "02",
-        "title": "Django News Site",
-        "description": "A news site built using React and Tailwind CSS. Fully responsive with dark mode support.",
+        "title": "weya.uz",
+        "description": "WEYA is a global content production company based in South Korea and Uzbekistan, specializing in animation, games, interior design, product advertisements, architecture, and more. Supports multilingual content.",
         "tools": [
+          "Vite",
           "React",
-          "TailwindCSS",
-          "Framer Motion"
+          "Tailwind CSS",
+          "DaisyUI",
+          "Framer Motion",
+          "i18next"
         ],
-        "link_web": "https://free-softs.netlify.app/",
-        "link_github": "https://github.com/shahbozshirinboyev",
-        "image": "https://cdn.dribbble.com/userupload/32202836/file/original-ed57e24965cae881f7bc51b0eb5f842b.jpg?resize=1200x900&vertical=center"
+        "link_web": "https://weya.uz/",
+        "link_github": "https://github.com/shahbozshirinboyev/weya.uz",
+        "image": "./images/works/weya.uz.webp"
       },
       {
         "id": 3,
         "number": "03",
-        "title": "JavaScript App",
-        "description": "A modern and functional web app built with JavaScript. Includes responsive layout and dark mode support.",
+        "title": "weya-works.com",
+        "description": "An internal corporate system designed for managing employees and projects. Offers task assignment, chat discussions, and more. Backend is built with Django.",
         "tools": [
+          "Vite",
           "React",
-          "TailwindCSS",
-          "Framer Motion"
+          "Tailwind CSS",
+          "DaisyUI",
+          "Axios",
+          "WebSocket"
         ],
-        "link_web": "https://free-softs.netlify.app/",
-        "link_github": "https://github.com/shahbozshirinboyev",
-        "image": "https://cdn.dribbble.com/userupload/32202836/file/original-ed57e24965cae881f7bc51b0eb5f842b.jpg?resize=1200x900&vertical=center"
+        "link_web": "https://weya-works.com/",
+        "link_github": "https://github.com/shahbozshirinboyev/weya-works.com.git",
+        "image": "./images/works/weya-works.com.webp"
+      },
+      {
+        "id": 4,
+        "number": "04",
+        "title": "wood-city.uz",
+        "description": "Wood-City is a company specializing in wooden houses and furniture production. Customers can select and order the desired furniture or house. Orders are redirected to a Telegram bot.",
+        "tools": [
+          "Vite",
+          "React",
+          "Tailwind CSS",
+          "DaisyUI",
+          "Axios",
+          "Telegram API"
+        ],
+        "link_web": "https://wood-city.uz/",
+        "link_github": "https://github.com/shahbozshirinboyev/wood-city.uz.git",
+        "image": "./images/works/wood-city.webp"
+      },
+      {
+        "id": 5,
+        "number": "05",
+        "title": "sofa.wood-city.uz",
+        "description": "Sofa Wood-City is a website for soft furniture sales. Orders are received via a Telegram bot. An admin panel is developed for managing data. The backend is powered by Supabase.",
+        "tools": [
+          "Vite",
+          "React",
+          "Tailwind CSS",
+          "DaisyUI",
+          "Axios",
+          "Supabase",
+          "Telegram API"
+        ],
+        "link_web": "https://sofa.wood-city.uz/",
+        "link_github": "https://github.com/shahbozshirinboyev/sofa.wood-city.uz",
+        "image": "./images/works/sofa.wood-city.uz.webp"
+      },
+      {
+        "id": 6,
+        "number": "06",
+        "title": "admin.wood-city.uz",
+        "description": "This admin panel is designed for dynamic data management on the site. Main functions include adding, deleting, and updating data via Supabase. Ensures reliable and efficient operation.",
+        "tools": [
+          "Vite",
+          "React",
+          "Tailwind CSS",
+          "Axios",
+          "Supabase"
+        ],
+        "link_web": "https://admin.wood-city.uz/",
+        "link_github": "https://github.com/shahbozshirinboyev/admin.wood-city.uz.git",
+        "image": "./images/works/admin.wood-city.webp"
+      },
+      {
+        "id": 7,
+        "number": "07",
+        "title": "NewsBOX",
+        "description": "A website for posting and reading news. Users can register and publish their own news. Created as a practical project.",
+        "tools": [
+          "Django",
+          "SQLite3"
+        ],
+        "link_web": "https://newsbox-8wnx.onrender.com/",
+        "link_github": "https://github.com/shahbozshirinboyev/newsbox.git",
+        "image": "./images/works/newsbox.webp"
       }
     ]
   },

@@ -18,7 +18,7 @@
     {
       "id": 4,
       "href": "#works",
-      "name": "Ishlar"
+      "name": "Loyihalar"
     },
     {
       "id": 5,
@@ -265,7 +265,7 @@
     }
   },
   "works": {
-    "section": "Ishlarim",
+    "section": "Loyihalarim",
     "items": [
       {
         "id": 1,

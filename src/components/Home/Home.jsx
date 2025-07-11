@@ -11,13 +11,13 @@ function Home() {
           <div className="w-full order-2 laptop:order-1">
 
             <div className="text-center laptop:text-start ">
-              <span className="font-semibold">{home.role}</span>
+              <span className="font-semibold pb-3">{home.role}</span>
               <h2 className="font-extrabold ">
                 <span className="text-2xl tablet:text-4xl">{home.greeting}</span>
                 <br />
                 <span className="text-green-500 text-3xl tablet:text-5xl">{home.name}</span>
               </h2>
-              <p className="font-normal mt-2">{home.description}</p> </div>
+              <p className="font-normal mt-4">{home.description}</p> </div>
 
             <div className="flex gap-2 mt-5 justify-center laptop:justify-start">
               <a href="#" target="_blank" className="btn rounded-full flex gap-2 border border-green-200 bg-green-50 dark:bg-green-50/10 dark:border-green-200/10 text-green-500 hover:bg-green-500 hover:text-white hover:border-transparent">
