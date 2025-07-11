@@ -272,13 +272,7 @@
         "number": "01",
         "title": "os-services.uz",
         "description": "OS//Services — foydalanuvchilarga operatsion tizimlar, dasturlar, drayverlar va maxsus dasturiy paketlarni tez, ishonchli va qulay tarzda o‘rnatib beruvchi xizmat platformasi. Har xil qurilmalarda (kompyuter, noutbuk, planshet, telefon) to‘g‘ri ko‘rinadi. Yengil va tez yuklanadigan interfeysga ega.",
-        "tools": [
-          "HTML",
-          "CSS",
-          "Bootstrap",
-          "JavaScript",
-          "WOW.js"
-        ],
+        "tools": ["HTML", "CSS", "Bootstrap", "JavaScript", "WOW.js"],
         "link_web": "https://os-services.uz/",
         "link_github": "https://github.com/shahbozshirinboyev/os-services.uz",
         "image": "./images/works/os-services.uz.jpg"
@@ -310,9 +304,7 @@
           "React",
           "Tailwind CSS",
           "DaisyUI",
-          "SwiperJS",
           "Axios",
-          "Yet Another React Lightbox",
           "WebSocket"
         ],
         "link_web": "https://weya-works.com/",
@@ -323,7 +315,7 @@
         "id": 4,
         "number": "04",
         "title": "wood-city.uz",
-        "description": "Wood City — yog‘ochdan qurilgan uylar va mebellar ishlab chiqarishga ixtisoslashgan kompaniya. Saytda mijozlar kerakli yug'och mebel yoki uyni tanlab, buyurma berishlari mumkin. Buyurtmalar telegram botga yo'naltirilgan.",
+        "description": "Wood-City — yog‘ochdan qurilgan uylar va mebellar ishlab chiqarishga ixtisoslashgan kompaniya. Saytda mijozlar kerakli yug'och mebel yoki uyni tanlab, buyurma berishlari mumkin. Buyurtmalar telegram botga yo'naltirilgan.",
         "tools": [
           "Vite",
           "React",
@@ -337,21 +329,38 @@
         "image": "./images/works/wood-city.jpg"
       },
       {
-        "id": 4,
-        "number": "04",
+        "id": 5,
+        "number": "05",
         "title": "sofa.wood-city.uz",
-        "description": "Wood City — yumshoq mebellar ishlab chiqarishga ixtisoslashgan kompaniya. Saytda mijozlar kerakli yug'och mebel yoki uyni tanlab, buyurma berishlari mumkin. Buyurtmalar telegram botga yo'naltirilgan.",
+        "description": "Sofa Wood-City — yumshoq mebellar savdosiga mo‘ljallangan sayt. Buyurtmalar Telegram bot orqali qabul qilinadi. Ma’lumotlarni boshqarish uchun admin panel ishlab chiqilgan. Backend qismi Supabase asosida qurilgan.",
         "tools": [
           "Vite",
           "React",
           "Tailwind CSS",
           "DaisyUI",
           "Axios",
+          "Supabase",
           "Telegram API"
         ],
-        "link_web": "https://wood-city.uz/",
-        "link_github": "https://github.com/shahbozshirinboyev/wood-city.uz.git",
-        "image": ""
+        "link_web": "https://sofa.wood-city.uz/",
+        "link_github": "https://github.com/shahbozshirinboyev/sofa.wood-city.uz",
+        "image": "./images/works/sofa.wood-city.uz.jpg"
+      },
+      {
+        "id": 6,
+        "number": "06",
+        "title": "admin.wood-city.uz",
+        "description": "Ushbu admin panel saytdagi ma'lumotlarni dinamik boshqarish uchun ishlab chiqilgan. Asosiy vazifasi — Supabase orqali ma'lumotlarni qo‘shish, o‘chirish va yangilash. Supabase kuchli va zamonaviy backend xizmatlarini taklif qilgani sababli, loyiha ishonchli va samarali ishlashini ta'minlaydi.",
+        "tools": [
+          "Vite",
+          "React",
+          "Tailwind CSS",
+          "Axios",
+          "Supabase"
+        ],
+        "link_web": "https://admin.wood-city.uz/",
+        "link_github": "https://github.com/shahbozshirinboyev/admin.wood-city.uz.git",
+        "image": "./images/works/admin.wood-city.jpg"
       }
     ]
   },
