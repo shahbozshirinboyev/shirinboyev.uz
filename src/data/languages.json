@@ -1,0 +1,17 @@
+[
+  {
+    "code": "uz",
+    "name": "O'zbekcha",
+    "icon": "/images/language_icons/uz.png"
+  },
+  {
+    "code": "en",
+    "name": "English",
+    "icon": "/images/language_icons/en.png"
+  },
+  {
+    "code": "ru",
+    "name": "Русский",
+    "icon": "/images/language_icons/ru.png"
+  }
+]
