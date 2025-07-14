@@ -36,7 +36,7 @@ function Home() {
             </div>
           </div>
           <div className="w-full flex justify-center items-center order-1 laptop:order-2">
-            <img className="rounded-full w-72 h-72 object-cover p-5 border-3 border-dashed" src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2025%2F01%2F21%2Ftravis-scott-4x4-single-premiere-college-football-championship-halftime-show-stream-1.jpg?q=75&w=800&cbr=1&fit=max" alt="" />
+            <img className="rounded-full w-72 h-72 object-cover p-5 border-3 border-dashed" src="./images/profile/3x4.jpg" alt="" />
           </div>
         </div>
         <Statistic />
