@@ -159,7 +159,7 @@
           "role": "Computer Systems Engineer"
         },
         {
-          "years": "September 2022 – November 2023",
+          "years": "July 2022 – November 2023",
           "company": "\"ProBrend\" LLC",
           "role": "Web Designer, Frontend Developer"
         }
@@ -351,13 +351,7 @@
         "number": "06",
         "title": "admin.wood-city.uz",
         "description": "This admin panel is designed for dynamic data management on the site. Main functions include adding, deleting, and updating data via Supabase. Ensures reliable and efficient operation.",
-        "tools": [
-          "Vite",
-          "React",
-          "Tailwind CSS",
-          "Axios",
-          "Supabase"
-        ],
+        "tools": ["Vite", "React", "Tailwind CSS", "Axios", "Supabase"],
         "link_web": "https://admin.wood-city.uz/",
         "link_github": "https://github.com/shahbozshirinboyev/admin.wood-city.uz.git",
         "image": "./images/works/admin.wood-city.webp"
@@ -367,10 +361,7 @@
         "number": "07",
         "title": "NewsBOX",
         "description": "A website for posting and reading news. Users can register and publish their own news. Created as a practical project.",
-        "tools": [
-          "Django",
-          "SQLite3"
-        ],
+        "tools": ["Django", "SQLite3"],
         "link_web": "https://newsbox-8wnx.onrender.com/",
         "link_github": "https://github.com/shahbozshirinboyev/newsbox.git",
         "image": "./images/works/newsbox.webp"
