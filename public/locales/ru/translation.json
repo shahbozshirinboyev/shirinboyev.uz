@@ -290,7 +290,7 @@
           "Framer Motion",
           "i18next"
         ],
-        "link_web": "https://weya.uz/",
+        "link_web": "https://weyauz.netlify.app/",
         "link_github": "https://github.com/shahbozshirinboyev/weya.uz",
         "image": "./images/works/weya.uz.webp"
       },
@@ -307,7 +307,7 @@
           "Axios",
           "WebSocket"
         ],
-        "link_web": "https://weya-works.com/",
+        "link_web": "https://weyaworkscom.netlify.app/",
         "link_github": "https://github.com/shahbozshirinboyev/weya-works.com.git",
         "image": "./images/works/weya-works.com.webp"
       },
