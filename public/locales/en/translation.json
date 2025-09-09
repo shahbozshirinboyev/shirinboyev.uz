@@ -362,7 +362,7 @@
         "title": "NewsBOX",
         "description": "A website for posting and reading news. Users can register and publish their own news. Created as a practical project.",
         "tools": ["Django", "SQLite3"],
-        "link_web": "https://newsbox-8wnx.onrender.com/",
+        "link_web": "https://django.shirinboyev.uz/en/",
         "link_github": "https://github.com/shahbozshirinboyev/newsbox.git",
         "image": "./images/works/newsbox.webp"
       }

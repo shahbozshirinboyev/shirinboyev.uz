@@ -16,7 +16,7 @@ function Statistic() {
     languages: 0,
     commits: 0,
   });
-  const [isLoading, setIsLoading] = useState(true); // 🔄 yuklanmoqda
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const username = "shahbozshirinboyev";
@@ -81,10 +81,10 @@ function Statistic() {
           commits: totalCommits,
         });
 
-        setIsLoading(false); // ✅ Ma'lumotlar tayyor
+        setIsLoading(false);
       } catch (err) {
         console.error("Xatolik:", err);
-        setIsLoading(false); // ❌ Xatolikda ham loading tugaydi
+        setIsLoading(false);
       }
     };
 
@@ -94,10 +94,9 @@ function Statistic() {
   return (
     <div className='container mx-auto px-2 tablet:px-0 grid grid-cols-2 gap-4 laptop:grid-cols-4 mt-10'>
       <StatCard number={stats.years} label={statistic.years} isLoading={isLoading} />
-<StatCard number={stats.repos} label={statistic.repos} isLoading={isLoading} />
-<StatCard number={stats.languages} label={statistic.languages} isLoading={isLoading} />
-<StatCard number={stats.commits} label={statistic.commits} isLoading={isLoading} />
-
+      <StatCard number={stats.repos} label={statistic.repos} isLoading={isLoading} />
+      <StatCard number={stats.languages} label={statistic.languages} isLoading={isLoading} />
+      <StatCard number={stats.commits} label={statistic.commits} isLoading={isLoading} />
     </div>
   );
 }
